@@ -1,0 +1,35 @@
+[project]
+name = "retailsync-insight"
+version = "0.1.0"
+description = "Motor INSIGHT de RetailSync — narrativa autogenerada + detector de patrones contraintuitivos"
+requires-python = ">=3.11"
+
+# Dependencias mínimas para el andamiaje + el script de ingesta.
+# La lógica del motor (detector + narrativa) aún NO está implementada.
+dependencies = [
+    "fastapi>=0.115",          # API HTTP (POST /insight)
+    "uvicorn[standard]>=0.30",  # servidor ASGI
+    "supabase>=2.7",            # cliente supabase-py (hex, POIs, screens_demo)
+    "anthropic>=0.40",          # Claude API (motor narrativo)
+    "pandas>=2.2",              # manejo tabular
+    "pyarrow>=17",              # escritura/lectura de parquet
+    "pydantic-settings>=2.4",   # carga de config desde .env
+    "python-dotenv>=1.0",       # lee el .env en desarrollo local
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.6",     # linter + formatter
+    "pytest>=8.3",   # tests (cuando empecemos a testear el motor)
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

@@ -1,0 +1,1 @@
+"""Motor INSIGHT de RetailSync."""

@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Secretos — NUNCA commitear el .env real
+.env
+.env.local
+
+# Datos locales (parquet, sqlite). Se regeneran con la ingesta.
+data/*.parquet
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Caos de editores / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
