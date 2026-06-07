@@ -21,6 +21,9 @@ data/*.db
 data/*.sqlite
 data/*.sqlite3
 
+# Config local de Claude Code (personal, no del proyecto)
+.claude/settings.local.json
+
 # Caos de editores / OS
 .DS_Store
 .idea/
