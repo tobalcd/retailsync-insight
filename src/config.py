@@ -94,7 +94,11 @@ DEFAULT_AFFINITY = {"residente": 0.5, "visitante": 0.5}
 # Agregación espacial → hex H3 res 8
 # ─────────────────────────────────────────────────────────────────────
 
-H3_RES = 8
+# Resolución de la malla del detector. Res 9 (~0,1 km²) aísla micro-zonas
+# (las torres de AZCA vs. el Tetuán residencial); res 8 (~0,46 km²) las diluía.
+# Los h3_index de las tablas Supabase siguen siendo res 8 (índice general);
+# la agregación recalcula la celda desde lat/lng a esta resolución.
+H3_RES = 9
 
 # Decaimiento del flujo de una zona MITMA sobre los hexes vecinos:
 # flujo(hex) = Σ_zonas visitantes × exp(-distancia_km / FLUJO_DECAY_KM)
@@ -111,6 +115,9 @@ SCREEN_TAG_TO_POI = {"turistico": "turismo", "business": "oficinas"}
 # Los venues de Ticketmaster (teatros, estadios, salas) cuentan como POIs de
 # esta categoría: son atractores de afluencia visitante.
 VENUE_POI_CATEGORY = "turismo"
+
+# Las paradas GTFS (metro/bus/cercanías, vía Mobility Database) son POIs de:
+TRANSIT_POI_CATEGORY = "transporte"
 
 # ─────────────────────────────────────────────────────────────────────
 # Afinidad sector × tipo de zona MITMA (0..1)

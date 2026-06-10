@@ -25,8 +25,10 @@ from src.config import (
     DEFAULT_ZONE_TYPE_AFFINITY,
     FLUJO_DECAY_KM,
     FLUJO_MAX_KM,
+    H3_RES,
     SCREEN_TAG_TO_POI,
     SCREEN_TIPO_TO_POI,
+    TRANSIT_POI_CATEGORY,
     VENUE_POI_CATEGORY,
     WINDOWS,
     ZONE_TYPE_AFFINITY,
@@ -34,6 +36,18 @@ from src.config import (
 from src.models import Hex
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
+
+
+def cell_of(row: dict) -> str | None:
+    """Celda H3 a la resolución del detector, desde lat/lng de la fila.
+
+    No usa el h3_index almacenado (que es res 8 fijo): así H3_RES es la única
+    fuente de verdad de la resolución. Sin coordenadas fiables → None.
+    """
+    lat, lng = row.get("lat"), row.get("lng")
+    if lat is None or lng is None or row.get("coords_pendientes"):
+        return None
+    return h3.latlng_to_cell(float(lat), float(lng), H3_RES)
 
 
 def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -132,8 +146,12 @@ def flujo_for_hex(lat: float, lon: float, zones: list[dict],
     return total
 
 
-def poi_counts_by_hex(screens: list[dict], venues: list[dict] | None = None) -> dict[str, dict[str, int]]:
-    """Cuenta categorías de POI de paso por h3_index (pantallas + venues TM)."""
+def poi_counts_by_hex(screens: list[dict], venues: list[dict] | None = None,
+                      transit_stops: list[dict] | None = None) -> dict[str, dict[str, int]]:
+    """Cuenta categorías de POI de paso por h3_index.
+
+    Fuentes: pantallas (tipo/tags), venues TM (turismo) y paradas GTFS (transporte).
+    """
     out: dict[str, dict[str, int]] = {}
 
     def bump(cell: str, cat: str) -> None:
@@ -160,15 +178,21 @@ def poi_counts_by_hex(screens: list[dict], venues: list[dict] | None = None) -> 
         if cell:
             bump(cell, VENUE_POI_CATEGORY)
 
+    for t in transit_stops or []:
+        cell = t.get("h3_index")
+        if cell:
+            bump(cell, TRANSIT_POI_CATEGORY)
+
     return out
 
 
 def build_hexes(ine_rows: list[dict], zones: list[dict], screens: list[dict],
                 venues: list[dict] | None = None,
-                sector: str | None = None, window: str | None = None) -> list[Hex]:
+                sector: str | None = None, window: str | None = None,
+                transit_stops: list[dict] | None = None) -> list[Hex]:
     """Malla de Hex de una ciudad. Universo = hexes con al menos una sección INE."""
     ine_by_hex = aggregate_ine(ine_rows)
-    pois = poi_counts_by_hex(screens, venues)
+    pois = poi_counts_by_hex(screens, venues, transit_stops)
 
     hexes: list[Hex] = []
     for cell, agg in ine_by_hex.items():
@@ -204,29 +228,43 @@ def _fetch_all(client, table: str, columns: str, city_slug: str) -> list[dict]:
         start += page
 
 
-def load_venues(city_slug: str) -> list[dict]:
-    """Venues TM cacheados en local (data/venues_{slug}.json). Sin fichero → []"""
-    path = DATA_DIR / f"venues_{city_slug}.json"
+def _load_json_cache(name: str) -> list[dict]:
+    path = DATA_DIR / name
     if not path.exists():
         return []
     return json.loads(path.read_text())
 
 
-def load_city_inputs(city_slug: str) -> tuple[list[dict], list[dict], list[dict], list[dict]]:
-    """Trae (ine_rows, zones, screens, venues) de una ciudad."""
+def load_venues(city_slug: str) -> list[dict]:
+    """Venues TM cacheados en local (data/venues_{slug}.json). Sin fichero → []"""
+    return _load_json_cache(f"venues_{city_slug}.json")
+
+
+def load_transit_stops(city_slug: str) -> list[dict]:
+    """Paradas GTFS cacheadas (data/transit_stops_{slug}.json). Sin fichero → []"""
+    return _load_json_cache(f"transit_stops_{city_slug}.json")
+
+
+def load_city_inputs(city_slug: str) -> tuple[list[dict], list[dict], list[dict], list[dict], list[dict]]:
+    """Trae (ine_rows, zones, screens, venues, transit_stops) de una ciudad."""
     from src.db.supabase_client import get_client
 
     client = get_client()
     ine = _fetch_all(client, "ine_renta",
-                     "h3_index,renta_neta_hogar,poblacion", city_slug)
+                     "lat,lng,coords_pendientes,renta_neta_hogar,poblacion", city_slug)
     zones = _fetch_all(client, "mobility_zones",
                        "lat,lng,avg_daily_visitors,tipo,traffic_profile", city_slug)
-    screens = _fetch_all(client, "screens", "h3_index,tipo,tags", city_slug)
-    return ine, zones, screens, load_venues(city_slug)
+    screens = _fetch_all(client, "screens", "lat,lng,tipo,tags", city_slug)
+    venues = load_venues(city_slug)
+    transit = load_transit_stops(city_slug)
+    # La celda se recalcula a H3_RES desde lat/lng (los h3_index de BD son res 8).
+    for row in (*ine, *screens, *venues, *transit):
+        row["h3_index"] = cell_of(row)
+    return ine, zones, screens, venues, transit
 
 
 def load_city_hexes(city_slug: str, sector: str | None = None,
                     window: str | None = None) -> list[Hex]:
     """Punto de entrada: malla de Hex lista para el detector."""
-    ine, zones, screens, venues = load_city_inputs(city_slug)
-    return build_hexes(ine, zones, screens, venues, sector, window)
+    ine, zones, screens, venues, transit = load_city_inputs(city_slug)
+    return build_hexes(ine, zones, screens, venues, sector, window, transit)
