@@ -39,3 +39,5 @@ screens.json
 data/transit_stops_*.json
 # Mapas de calibración (regenerables con src.tools.calibration_map)
 data/calibration_*.html
+# Cache de negocios OSM (regenerable con src.validation.level1)
+data/osm_*.json
