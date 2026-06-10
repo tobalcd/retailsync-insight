@@ -37,3 +37,5 @@ data/*.sqlite3
 screens.json
 # Paradas GTFS (pesadas, regenerables con src.signals.gtfs + token)
 data/transit_stops_*.json
+# Mapas de calibración (regenerables con src.tools.calibration_map)
+data/calibration_*.html
