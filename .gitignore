@@ -35,3 +35,5 @@ data/*.sqlite3
 # Node local para migración (no versionar)
 .tooling/
 screens.json
+# Paradas GTFS (pesadas, regenerables con src.signals.gtfs + token)
+data/transit_stops_*.json
