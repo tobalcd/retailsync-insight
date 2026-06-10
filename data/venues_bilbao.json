@@ -1,0 +1,331 @@
+[
+ {
+  "tm_id": "Z598xZ2qZFe17",
+  "name": "Filarmónica de Bilbao",
+  "lat": 43.26332,
+  "lng": -2.93328,
+  "h3_index": "88184b5421fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ6eF",
+  "name": "Sala Azkena",
+  "lat": 43.26368,
+  "lng": -2.92993,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAAF",
+  "name": "Kafe Antzokia",
+  "lat": 43.2636,
+  "lng": -2.92773,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7Fe",
+  "name": "Bilborock",
+  "lat": 43.25725,
+  "lng": -2.92754,
+  "h3_index": "88184b543dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdeAe",
+  "name": "Bilbao Arena Miribilla",
+  "lat": 43.25223,
+  "lng": -2.92605,
+  "h3_index": "88184b5435fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67dF",
+  "name": "Sala Santana 27 - Sala Blue",
+  "lat": 43.25018,
+  "lng": -2.89977,
+  "h3_index": "88184b5415fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZevAe",
+  "name": "Sala Santana 27",
+  "lat": 43.25018,
+  "lng": -2.89977,
+  "h3_index": "88184b5415fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7kd7",
+  "name": "Sala Santana 27 - Sala Gold",
+  "lat": 43.25015,
+  "lng": -2.89977,
+  "h3_index": "88184b5415fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZk6k",
+  "name": "Bizkaia Arena - BEC!",
+  "lat": 43.29087,
+  "lng": -2.98869,
+  "h3_index": "88184b550dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvv7",
+  "name": "Local Plaza Moyúa",
+  "lat": 43.2627,
+  "lng": -2.93563,
+  "h3_index": "88184b5421fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvvk",
+  "name": "Local Plaza Moyúa",
+  "lat": 43.2627,
+  "lng": -2.93563,
+  "h3_index": "88184b5421fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdk7k",
+  "name": "Sala BBK",
+  "lat": 43.26193,
+  "lng": -2.93085,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZde67",
+  "name": "Palacio Euskalduna",
+  "lat": 43.25942,
+  "lng": -2.93201,
+  "h3_index": "88184b5423fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkAve",
+  "name": "Kutxa Beltza - Kafe Antozkia",
+  "lat": 43.26388,
+  "lng": -2.92813,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdvdF",
+  "name": "Sala Rocket",
+  "lat": 43.26778,
+  "lng": -2.93265,
+  "h3_index": "88184b5421fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ716k",
+  "name": "Cotton Club",
+  "lat": 43.25981,
+  "lng": -2.94052,
+  "h3_index": "88184b5427fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZek61",
+  "name": "Stage Live",
+  "lat": 43.26418,
+  "lng": -2.9277,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ76kF",
+  "name": "Sala Back&Stage",
+  "lat": 43.26431,
+  "lng": -2.92772,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAaae",
+  "name": "Bilbao City Tour",
+  "lat": 43.26867,
+  "lng": -2.93401,
+  "h3_index": "88184b5421fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeFa7",
+  "name": "Museo Guggenheim",
+  "lat": 43.26868,
+  "lng": -2.93401,
+  "h3_index": "88184b5421fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6771",
+  "name": "Sala Shake",
+  "lat": 43.263,
+  "lng": -2.92528,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZekF",
+  "name": "Rock Star Live Megapark",
+  "lat": 43.26492,
+  "lng": -2.94437,
+  "h3_index": "88184b5425fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeFFe",
+  "name": "Rock Star Bilbao",
+  "lat": 43.26492,
+  "lng": -2.94437,
+  "h3_index": "88184b5425fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFAkF",
+  "name": "Sala Crystal",
+  "lat": 43.26273,
+  "lng": -2.92471,
+  "h3_index": "88184b542bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeka7",
+  "name": "Plaza de Toros de Vista Alegre",
+  "lat": 43.25559,
+  "lng": -2.9369,
+  "h3_index": "88184b5423fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7aF",
+  "name": "Satélite T",
+  "lat": 43.26964,
+  "lng": -2.94273,
+  "h3_index": "88184b542dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkAAk",
+  "name": "Pabellón La Casilla",
+  "lat": 43.25671,
+  "lng": -2.94365,
+  "h3_index": "88184b5427fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d1F",
+  "name": "Estadio de San Mamés",
+  "lat": 43.26417,
+  "lng": -2.94934,
+  "h3_index": "88184b5425fffff"
+ },
+ {
+  "tm_id": "Z598xZG2Ze1de",
+  "name": "Estadio San Mames",
+  "lat": 43.26286,
+  "lng": -2.94972,
+  "h3_index": "88184b5427fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkv7",
+  "name": "Frontón Bizkaia Pilotelakua",
+  "lat": 43.24842,
+  "lng": -2.92978,
+  "h3_index": "88184b5435fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkAA1",
+  "name": "Parque Kobetamendi",
+  "lat": 43.25841,
+  "lng": -2.96586,
+  "h3_index": "88184b5513fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7kk",
+  "name": "Sala Premier",
+  "lat": 43.2729,
+  "lng": -2.96343,
+  "h3_index": "88184b5519fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAdAe",
+  "name": "Sala Black Fever",
+  "lat": 43.24985,
+  "lng": -2.90812,
+  "h3_index": "88184b543bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6eFk",
+  "name": "Fever - Sala Blue",
+  "lat": 43.25031,
+  "lng": -2.89997,
+  "h3_index": "88184b5415fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7FAF",
+  "name": "Sala Santana 27 - Sala Fever",
+  "lat": 43.25015,
+  "lng": -2.89977,
+  "h3_index": "88184b5415fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZFA7",
+  "name": "Bec (Sala Ansio)",
+  "lat": 43.29061,
+  "lng": -2.98654,
+  "h3_index": "88184b550dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA1F7",
+  "name": "Sala Cubec - Bizkaia Arena BEC!",
+  "lat": 43.28823,
+  "lng": -2.99296,
+  "h3_index": "88184b550dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFF77",
+  "name": "Recinto Ferial de Ansio",
+  "lat": 43.28696,
+  "lng": -2.99614,
+  "h3_index": "88184b550dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdFk1",
+  "name": "Hotel Seminario",
+  "lat": 43.29304,
+  "lng": -2.87803,
+  "h3_index": "88184b5635fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6e1e",
+  "name": "Mendigo",
+  "lat": 43.29869,
+  "lng": -2.99106,
+  "h3_index": "88184b556bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ676F",
+  "name": "Vega de Lamiako",
+  "lat": 43.31933,
+  "lng": -2.99966,
+  "h3_index": "88184b5091fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6Fae",
+  "name": "Groove",
+  "lat": 43.31662,
+  "lng": -3.03136,
+  "h3_index": "88184b50b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFFk",
+  "name": "Muxikebarri",
+  "lat": 43.35144,
+  "lng": -3.01287,
+  "h3_index": "88184b50c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFF1",
+  "name": "Belako Getxo",
+  "lat": 43.36149,
+  "lng": -3.00697,
+  "h3_index": "88184b50c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFFk",
+  "name": "Autocine Getxo",
+  "lat": 43.36149,
+  "lng": -3.00697,
+  "h3_index": "88184b50c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdve7",
+  "name": "CUE",
+  "lat": 43.37181,
+  "lng": -2.99883,
+  "h3_index": "88184b52a7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFdae",
+  "name": "Drumgorri Aretoa",
+  "lat": 43.13367,
+  "lng": -2.96888,
+  "h3_index": "88184b4409fffff"
+ }
+]

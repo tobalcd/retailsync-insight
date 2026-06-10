@@ -7,13 +7,15 @@ build/
 dist/
 
 # Entornos virtuales
-.venv/
+.venv*/
 venv/
 env/
 
 # Secretos — NUNCA commitear el .env real
 .env
 .env.local
+.env.save
+.env.*.save
 
 # Datos locales (parquet, sqlite). Se regeneran con la ingesta.
 data/*.parquet
@@ -29,3 +31,7 @@ data/*.sqlite3
 .idea/
 .vscode/
 *.swp
+
+# Node local para migración (no versionar)
+.tooling/
+screens.json

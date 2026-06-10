@@ -1,0 +1,11 @@
+ciudad,pais,total_eventos,eventos_music,eventos_sports,eventos_arts_theatre,venues
+Madrid,ES,1096,49,0,902,256
+Barcelona,ES,781,58,4,1,222
+Valencia,ES,3,3,0,0,77
+Sevilla,ES,4,3,0,1,65
+Zaragoza,ES,1,1,0,0,30
+Málaga,ES,19,1,0,0,47
+Murcia,ES,0,0,0,0,26
+Bilbao,ES,0,0,0,0,47
+Valladolid,ES,0,0,0,0,26
+Alicante,ES,1,1,0,0,27

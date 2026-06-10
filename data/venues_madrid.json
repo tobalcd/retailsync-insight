@@ -1,0 +1,1794 @@
+[
+ {
+  "tm_id": "Z598xZ2qZd61k",
+  "name": "Teatro Eslava",
+  "lat": 40.41716,
+  "lng": -3.70656,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeA6e",
+  "name": "Sala El Sol",
+  "lat": 40.41906,
+  "lng": -3.70163,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZea6k",
+  "name": "Café Berlín",
+  "lat": 40.41959,
+  "lng": -3.70794,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7a1",
+  "name": "El Café de la Ópera",
+  "lat": 40.41877,
+  "lng": -3.71017,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZ7F",
+  "name": "Teatre Lope de Vega",
+  "lat": 40.42151,
+  "lng": -3.70891,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6FA7",
+  "name": "Sala Vesta",
+  "lat": 40.42298,
+  "lng": -3.69564,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ1Fk",
+  "name": "Siroco",
+  "lat": 40.42702,
+  "lng": -3.70769,
+  "h3_index": "88390cb1b9fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAA7",
+  "name": "Sala But",
+  "lat": 40.42703,
+  "lng": -3.69969,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7A1",
+  "name": "G. Teatro Caixabank Príncipe Pío",
+  "lat": 40.42089,
+  "lng": -3.71881,
+  "h3_index": "88390cb1abfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7ke",
+  "name": "The Music Station Príncipe Pío",
+  "lat": 40.42089,
+  "lng": -3.71881,
+  "h3_index": "88390cb1abfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF111",
+  "name": "Museo Banksy Madrid",
+  "lat": 40.40373,
+  "lng": -3.70619,
+  "h3_index": "88390ca34bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAde",
+  "name": "La Riviera",
+  "lat": 40.413,
+  "lng": -3.72215,
+  "h3_index": "88390cb1a3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7661",
+  "name": "Fun House",
+  "lat": 40.43137,
+  "lng": -3.70114,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFe7",
+  "name": "Sala B",
+  "lat": 40.43128,
+  "lng": -3.7002,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZk7k",
+  "name": "Sala Changó",
+  "lat": 40.43176,
+  "lng": -3.6982,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ67k",
+  "name": "Sala Copérnico",
+  "lat": 40.43528,
+  "lng": -3.71369,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZA17",
+  "name": "Sala Mon Live",
+  "lat": 40.4359,
+  "lng": -3.7165,
+  "h3_index": "88390cb181fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdevF",
+  "name": "Sala Galileo Galilei",
+  "lat": 40.43851,
+  "lng": -3.70969,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF1vF",
+  "name": "Sala UNI",
+  "lat": 40.43864,
+  "lng": -3.7095,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7ek",
+  "name": "Movistar Arena",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6aae",
+  "name": "LA SALA (MOVISTAR ARENA)",
+  "lat": 40.42419,
+  "lng": -3.67351,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6Fv7",
+  "name": "Live Las Ventas",
+  "lat": 40.43169,
+  "lng": -3.66299,
+  "h3_index": "88390ca26bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe1aF",
+  "name": "Sala Nazca",
+  "lat": 40.45146,
+  "lng": -3.69482,
+  "h3_index": "88390cb199fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFvek",
+  "name": "Bernabéu",
+  "lat": 40.45303,
+  "lng": -3.68833,
+  "h3_index": "88390cb19bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZa67",
+  "name": "Moby Dick Club",
+  "lat": 40.45449,
+  "lng": -3.69404,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe6AF",
+  "name": "Sala Black Box (P. Vistalegre)",
+  "lat": 40.38681,
+  "lng": -3.73952,
+  "h3_index": "88390cba97fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7v1",
+  "name": "Palacio Vistalegre",
+  "lat": 40.386,
+  "lng": -3.7385,
+  "h3_index": "88390cba97fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFd7",
+  "name": "Sala Wagon",
+  "lat": 40.47144,
+  "lng": -3.682,
+  "h3_index": "88390cb0abfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFd7k",
+  "name": "Sala Villanos",
+  "lat": 40.40397,
+  "lng": -3.78242,
+  "h3_index": "88390cbac7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaedk",
+  "name": "The Lenovo Garage",
+  "lat": 40.48689,
+  "lng": -3.67799,
+  "h3_index": "88390cb081fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6Fe1",
+  "name": "Estadio Riyadh Air Metropolitano",
+  "lat": 40.43624,
+  "lng": -3.59947,
+  "h3_index": "88390ca2cdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6FAe",
+  "name": "Iberdrola Music",
+  "lat": 40.32866,
+  "lng": -3.71094,
+  "h3_index": "88390cb897fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZav1e",
+  "name": "ESTADIO SHAKIRA(Iberdrola Music)",
+  "lat": 40.32866,
+  "lng": -3.71094,
+  "h3_index": "88390cb897fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaeaF",
+  "name": "Polígono Industrial Las Mercedes",
+  "lat": 40.44665,
+  "lng": -3.5819,
+  "h3_index": "88390ca2cbfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZdk1",
+  "name": "La Nueva Cubierta De Leganés",
+  "lat": 40.326,
+  "lng": -3.75859,
+  "h3_index": "88390cb8e3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ771F",
+  "name": "Varios Recintos",
+  "lat": 40.41678,
+  "lng": -3.70379,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7k7F",
+  "name": "Mad Cool",
+  "lat": 40.41678,
+  "lng": -3.70379,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdv6e",
+  "name": "Salas Primavera Club",
+  "lat": 40.41678,
+  "lng": -3.70379,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdv6k",
+  "name": "Salas Primavera Club",
+  "lat": 40.41678,
+  "lng": -3.70379,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7ek",
+  "name": "Varios Recintos",
+  "lat": 40.41678,
+  "lng": -3.70379,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6711",
+  "name": "Varios",
+  "lat": 40.41691,
+  "lng": -3.70333,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7Fk",
+  "name": "Museo Nal. Thyssen-Bornemisza",
+  "lat": 40.41604,
+  "lng": -3.70368,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAv7k",
+  "name": "Teatro Reina Victoria",
+  "lat": 40.41653,
+  "lng": -3.70201,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF6F1",
+  "name": "Teatro Albéniz",
+  "lat": 40.41534,
+  "lng": -3.7041,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeav1",
+  "name": "La Boite Live",
+  "lat": 40.4183,
+  "lng": -3.70321,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd77F",
+  "name": "Sala La Boite",
+  "lat": 40.41832,
+  "lng": -3.7032,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1d1",
+  "name": "Enbabia Infused",
+  "lat": 40.41547,
+  "lng": -3.70123,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7F6k",
+  "name": "Teatro Calderón",
+  "lat": 40.41403,
+  "lng": -3.70341,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAv61",
+  "name": "Teatro Principe Gran Vía",
+  "lat": 40.41957,
+  "lng": -3.70484,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1dF",
+  "name": "Planet Club",
+  "lat": 40.41521,
+  "lng": -3.70055,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe1a1",
+  "name": "Sala Icon Stage",
+  "lat": 40.41386,
+  "lng": -3.70342,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZded1",
+  "name": "Sala Wurlitzer Ballroom",
+  "lat": 40.41967,
+  "lng": -3.7026,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1ak",
+  "name": "Museo de las Ilusiones",
+  "lat": 40.41347,
+  "lng": -3.70389,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6F6e",
+  "name": "Sala La Caverna",
+  "lat": 40.41563,
+  "lng": -3.69955,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF1Fk",
+  "name": "Cadavra",
+  "lat": 40.41937,
+  "lng": -3.70081,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAFk",
+  "name": "Costello Club",
+  "lat": 40.41945,
+  "lng": -3.70077,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk17e",
+  "name": "Nomad Club",
+  "lat": 40.41508,
+  "lng": -3.69965,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFkae",
+  "name": "Cines Callao / Callao City Light",
+  "lat": 40.41998,
+  "lng": -3.70608,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7F1",
+  "name": "Museo del Prado",
+  "lat": 40.41378,
+  "lng": -3.70088,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7FF",
+  "name": "Museo del Prado",
+  "lat": 40.41378,
+  "lng": -3.70088,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFdk",
+  "name": "Room00 Ventura Hostel",
+  "lat": 40.41583,
+  "lng": -3.69881,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkF6e",
+  "name": "Sala 0",
+  "lat": 40.42035,
+  "lng": -3.70602,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFdF",
+  "name": "Sala El Principito",
+  "lat": 40.4171,
+  "lng": -3.69849,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAva1",
+  "name": "Teatro Cofidis Alcázar",
+  "lat": 40.41883,
+  "lng": -3.6991,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7vA1",
+  "name": "Cat's Hostel",
+  "lat": 40.41293,
+  "lng": -3.70183,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAevF",
+  "name": "Palacio de la Prensa",
+  "lat": 40.42082,
+  "lng": -3.70512,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdAkk",
+  "name": "Palacio de la Prensa - Sala 0",
+  "lat": 40.42082,
+  "lng": -3.70512,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ61ke",
+  "name": "Teatro Magno",
+  "lat": 40.4173,
+  "lng": -3.69832,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF17k",
+  "name": "Sala Upper",
+  "lat": 40.4173,
+  "lng": -3.69832,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA77F",
+  "name": "Carpa Cirque du Soleil",
+  "lat": 40.41629,
+  "lng": -3.7093,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFv1F",
+  "name": "Teatro Capitol Gran Vía",
+  "lat": 40.42005,
+  "lng": -3.70739,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZav7k",
+  "name": "Espacio Hollywood",
+  "lat": 40.41434,
+  "lng": -3.6992,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavdk",
+  "name": "Axel Hotel",
+  "lat": 40.41317,
+  "lng": -3.70057,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7a1",
+  "name": "Casa Patas",
+  "lat": 40.4127,
+  "lng": -3.70175,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAkFF",
+  "name": "Teatro Nuevo Apolo",
+  "lat": 40.41232,
+  "lng": -3.70333,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZav77",
+  "name": "Ya'sta Club",
+  "lat": 40.42111,
+  "lng": -3.70199,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7k7",
+  "name": "Ensegway. Rutas en Segway Madrid",
+  "lat": 40.417,
+  "lng": -3.71028,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ61Fk",
+  "name": "Jaguar (Lula Club)",
+  "lat": 40.42137,
+  "lng": -3.70714,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZd7",
+  "name": "Teatro Rialto",
+  "lat": 40.42138,
+  "lng": -3.7074,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67de",
+  "name": "Teatro Real",
+  "lat": 40.4183,
+  "lng": -3.71058,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7ak",
+  "name": "Sala Republik Club",
+  "lat": 40.42208,
+  "lng": -3.70239,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dA7",
+  "name": "El Perro de la Parte de Atrás...",
+  "lat": 40.42226,
+  "lng": -3.70387,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaak",
+  "name": "Círculo de Bellas Artes Madrid",
+  "lat": 40.4183,
+  "lng": -3.69653,
+  "h3_index": "88390cb1b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe117",
+  "name": "Sala Cool",
+  "lat": 40.42111,
+  "lng": -3.70901,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkd1e",
+  "name": "Teatro Bellas Artes",
+  "lat": 40.41823,
+  "lng": -3.69631,
+  "h3_index": "88390cb1b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6kkk",
+  "name": "Club Malasaña",
+  "lat": 40.42305,
+  "lng": -3.70373,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFke7",
+  "name": "El Sótano",
+  "lat": 40.41117,
+  "lng": -3.70772,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7Ad1",
+  "name": "Teatro Flamenco Madrid",
+  "lat": 40.42318,
+  "lng": -3.70452,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkdv7",
+  "name": "Teatro Alfil",
+  "lat": 40.42318,
+  "lng": -3.70452,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAF6F",
+  "name": "Teatro La Latina",
+  "lat": 40.41157,
+  "lng": -3.70877,
+  "h3_index": "88390cb1b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7F7",
+  "name": "Intruso Bar",
+  "lat": 40.42313,
+  "lng": -3.70025,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7Fe",
+  "name": "Intruso Bar",
+  "lat": 40.42313,
+  "lng": -3.70025,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvAe",
+  "name": "Teatro EDP Gran Vía",
+  "lat": 40.42248,
+  "lng": -3.70898,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d7e",
+  "name": "Palacio Neptuno",
+  "lat": 40.41455,
+  "lng": -3.69509,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67A1",
+  "name": "Teatro Pavón",
+  "lat": 40.41003,
+  "lng": -3.70616,
+  "h3_index": "88390ca34bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk67k",
+  "name": "Sala Juglar",
+  "lat": 40.40971,
+  "lng": -3.7021,
+  "h3_index": "88390ca34bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7aFe",
+  "name": "Auditorio Marcelino Camacho",
+  "lat": 40.41373,
+  "lng": -3.6945,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvF1",
+  "name": "Pequeño Teatro Gran Via",
+  "lat": 40.42242,
+  "lng": -3.71113,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZev7k",
+  "name": "Teatro Coliseum",
+  "lat": 40.42328,
+  "lng": -3.71013,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7ade",
+  "name": "Teatro Infanta Isabel",
+  "lat": 40.42231,
+  "lng": -3.69563,
+  "h3_index": "88390cb1b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dk7",
+  "name": "COAM: Col. Arquitectos de Madrid",
+  "lat": 40.42418,
+  "lng": -3.6985,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkk1F",
+  "name": "Bus Turístico Madrid",
+  "lat": 40.41519,
+  "lng": -3.6927,
+  "h3_index": "88390cb1b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk76k",
+  "name": "Museo de Cera",
+  "lat": 40.4251,
+  "lng": -3.70064,
+  "h3_index": "88390cb1b1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7FF",
+  "name": "Teatro del Arte",
+  "lat": 40.40936,
+  "lng": -3.69798,
+  "h3_index": "88390cb1b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAe6k",
+  "name": "Sala Búho Real",
+  "lat": 40.42453,
+  "lng": -3.69667,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFkdF",
+  "name": "Sala Hangar 48",
+  "lat": 40.41139,
+  "lng": -3.71404,
+  "h3_index": "88390ca349fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7dv7",
+  "name": "Sala Shoko",
+  "lat": 40.4088,
+  "lng": -3.71069,
+  "h3_index": "88390ca349fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavd1",
+  "name": "Espacio Broadway",
+  "lat": 40.42605,
+  "lng": -3.70785,
+  "h3_index": "88390cb1b9fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ77F",
+  "name": "Teatro Barceló",
+  "lat": 40.42684,
+  "lng": -3.7,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZk7",
+  "name": "Ochoymedio  Sala But",
+  "lat": 40.42684,
+  "lng": -3.7,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ671",
+  "name": "Café la Palma",
+  "lat": 40.42677,
+  "lng": -3.70803,
+  "h3_index": "88390cb1b9fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZe77",
+  "name": "Sala Arena",
+  "lat": 40.42496,
+  "lng": -3.71255,
+  "h3_index": "88390cb1bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7kde",
+  "name": "Teatro Kapital",
+  "lat": 40.40978,
+  "lng": -3.69317,
+  "h3_index": "88390ca359fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67Fk",
+  "name": "Palacio Santa Bárbara",
+  "lat": 40.42639,
+  "lng": -3.69722,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7Ak",
+  "name": "Independance Club",
+  "lat": 40.40966,
+  "lng": -3.69262,
+  "h3_index": "88390ca359fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZka1e",
+  "name": "Real Jardín Botánico",
+  "lat": 40.41111,
+  "lng": -3.69113,
+  "h3_index": "88390ca359fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaa1",
+  "name": "Real Jardín Botánico",
+  "lat": 40.41111,
+  "lng": -3.69113,
+  "h3_index": "88390ca359fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7ak",
+  "name": "Museo Reina Sofía",
+  "lat": 40.40816,
+  "lng": -3.69345,
+  "h3_index": "88390ca35dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeA6k",
+  "name": "Auditorio 200 Museo Reina Sofía",
+  "lat": 40.40721,
+  "lng": -3.69459,
+  "h3_index": "88390ca35dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAkF",
+  "name": "Auditorio 400 Museo Reina Sofia",
+  "lat": 40.40721,
+  "lng": -3.69459,
+  "h3_index": "88390ca35dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAv11",
+  "name": "Teatro Maravillas",
+  "lat": 40.42873,
+  "lng": -3.70324,
+  "h3_index": "88390cb1b9fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ6dk",
+  "name": "Sala Caracol",
+  "lat": 40.40404,
+  "lng": -3.70011,
+  "h3_index": "88390ca34bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6F7k",
+  "name": "Flamenco de Leones",
+  "lat": 40.42086,
+  "lng": -3.68737,
+  "h3_index": "88390cb1b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71A7",
+  "name": "Espacio Ephimera Madrid",
+  "lat": 40.43007,
+  "lng": -3.70328,
+  "h3_index": "88390cb1b9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71Ae",
+  "name": "Espacio Ephimera Madrid",
+  "lat": 40.43007,
+  "lng": -3.70328,
+  "h3_index": "88390cb1b9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdkk1",
+  "name": "Sala Honky Tonk",
+  "lat": 40.43017,
+  "lng": -3.69763,
+  "h3_index": "88390cb1bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ76dF",
+  "name": "Jardines del Descubrimiento",
+  "lat": 40.42489,
+  "lng": -3.68848,
+  "h3_index": "88390ca26dfffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZae",
+  "name": "Hard Rock Café",
+  "lat": 40.42631,
+  "lng": -3.68967,
+  "h3_index": "88390ca26dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ767e",
+  "name": "Sala Clamores",
+  "lat": 40.43119,
+  "lng": -3.70099,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFvA1",
+  "name": "Teatros Luchana (Sala 2)",
+  "lat": 40.43187,
+  "lng": -3.69825,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFvAF",
+  "name": "NO USAR",
+  "lat": 40.43187,
+  "lng": -3.69825,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFeA1",
+  "name": "The Bassement Club",
+  "lat": 40.43264,
+  "lng": -3.71019,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdaae",
+  "name": "Hotel AC Atocha",
+  "lat": 40.40386,
+  "lng": -3.69007,
+  "h3_index": "88390ca35dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkAk1",
+  "name": "Hotel Villa Magna",
+  "lat": 40.42995,
+  "lng": -3.68815,
+  "h3_index": "88390cb197fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFA7",
+  "name": "Florida Retiro",
+  "lat": 40.41809,
+  "lng": -3.68009,
+  "h3_index": "88390ca265fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d17",
+  "name": "Rock Palace",
+  "lat": 40.40212,
+  "lng": -3.6895,
+  "h3_index": "88390ca35dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6661",
+  "name": "Tekila Club",
+  "lat": 40.43316,
+  "lng": -3.71492,
+  "h3_index": "88390cb187fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAva7",
+  "name": "Teatro Galileo",
+  "lat": 40.43489,
+  "lng": -3.71057,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkeAF",
+  "name": "Espacio Delicias",
+  "lat": 40.40007,
+  "lng": -3.69235,
+  "h3_index": "88390ca355fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZav7F",
+  "name": "A Quién le Importa",
+  "lat": 40.43371,
+  "lng": -3.71482,
+  "h3_index": "88390cb187fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF717",
+  "name": "La Peligrosa",
+  "lat": 40.41972,
+  "lng": -3.6787,
+  "h3_index": "88390ca265fffff"
+ },
+ {
+  "tm_id": "Z598xZG2Ze7F1",
+  "name": "Estadio Vicente Calderón",
+  "lat": 40.40173,
+  "lng": -3.72064,
+  "h3_index": "88390ca34dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFd6e",
+  "name": "Fundación Carlos de Amberes",
+  "lat": 40.43136,
+  "lng": -3.68571,
+  "h3_index": "88390cb197fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6k7F",
+  "name": "Sweet Space",
+  "lat": 40.43221,
+  "lng": -3.68696,
+  "h3_index": "88390cb197fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ767F",
+  "name": "Teatro Alcalá",
+  "lat": 40.42341,
+  "lng": -3.67824,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6a1",
+  "name": "Teatro Alcalá - Sala 2",
+  "lat": 40.42341,
+  "lng": -3.67824,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7k7k",
+  "name": "Sala Gotham",
+  "lat": 40.43583,
+  "lng": -3.71607,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd6FF",
+  "name": "Rock-Ola",
+  "lat": 40.43821,
+  "lng": -3.70095,
+  "h3_index": "88390cb195fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFk7e",
+  "name": "Sala Insomnio Club",
+  "lat": 40.43864,
+  "lng": -3.7095,
+  "h3_index": "88390cb183fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ6ae",
+  "name": "WiZink Center Ring",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkek",
+  "name": "WiZink Center",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd1ak",
+  "name": "WiZink Center (Ant.Pal.Deportes)",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd71e",
+  "name": "Wizink Center-Sala Exposiciones",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7a1",
+  "name": "Movistar Arena-Sala Exposiciones",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkd6e",
+  "name": "No usar",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZF1",
+  "name": "Barclaycard Center Ring",
+  "lat": 40.42394,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeaeF",
+  "name": "NO USAR",
+  "lat": 40.42395,
+  "lng": -3.6758,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFvFk",
+  "name": "La Sospechosa",
+  "lat": 40.4328,
+  "lng": -3.6787,
+  "h3_index": "88390ca269fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZek",
+  "name": "Barclaycard Center",
+  "lat": 40.42387,
+  "lng": -3.6717,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe67k",
+  "name": "Sala Truss Live Movistar Arena",
+  "lat": 40.4239,
+  "lng": -3.67167,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZa7",
+  "name": "Sala Truss Live Wizink Center",
+  "lat": 40.4239,
+  "lng": -3.67167,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZadee",
+  "name": "La Otra Movida",
+  "lat": 40.40444,
+  "lng": -3.67428,
+  "h3_index": "88390ca353fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAke1",
+  "name": "Madrid Arena",
+  "lat": 40.41301,
+  "lng": -3.73821,
+  "h3_index": "88390cb1a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeaee",
+  "name": "CATS Concerts",
+  "lat": 40.44279,
+  "lng": -3.71354,
+  "h3_index": "88390cb18bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6ee",
+  "name": "Goya Social Club",
+  "lat": 40.42446,
+  "lng": -3.66904,
+  "h3_index": "88390ca261fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ677F",
+  "name": "Story Live",
+  "lat": 40.4248,
+  "lng": -3.66777,
+  "h3_index": "88390ca263fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeaaF",
+  "name": "Hotel VP Jardín Metropolitano",
+  "lat": 40.44722,
+  "lng": -3.70568,
+  "h3_index": "88390cb19dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dv7",
+  "name": "DOMO 360",
+  "lat": 40.44122,
+  "lng": -3.7281,
+  "h3_index": "88390cb18dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6FF7",
+  "name": "Polideportivo Municipal Gallur",
+  "lat": 40.3985,
+  "lng": -3.73784,
+  "h3_index": "88390cba91fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdaa7",
+  "name": "Hotel AC Avenida América",
+  "lat": 40.43805,
+  "lng": -3.67256,
+  "h3_index": "88390ca245fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67Ak",
+  "name": "Panda Club",
+  "lat": 40.44816,
+  "lng": -3.69598,
+  "h3_index": "88390cb199fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71k1",
+  "name": "Gruta 77",
+  "lat": 40.39092,
+  "lng": -3.73141,
+  "h3_index": "88390cba93fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ66k1",
+  "name": "Teatro del Colegio Claret",
+  "lat": 40.44029,
+  "lng": -3.67234,
+  "h3_index": "88390ca245fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZe1",
+  "name": "Plaza de Toros Las Ventas",
+  "lat": 40.43126,
+  "lng": -3.66373,
+  "h3_index": "88390ca26bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7ek",
+  "name": "NO USAR",
+  "lat": 40.4321,
+  "lng": -3.66331,
+  "h3_index": "88390ca26bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdA7e",
+  "name": "Auditorio Nacional de Música",
+  "lat": 40.44552,
+  "lng": -3.67803,
+  "h3_index": "88390ca24dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZedv1",
+  "name": "Jardín Botánico - UCM",
+  "lat": 40.44727,
+  "lng": -3.72633,
+  "h3_index": "88390cb189fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7dk",
+  "name": "Sala Specka",
+  "lat": 40.45166,
+  "lng": -3.69482,
+  "h3_index": "88390cb199fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7d11",
+  "name": "Parque de Atracciones de Madrid",
+  "lat": 40.41306,
+  "lng": -3.7511,
+  "h3_index": "88390cbad3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7v6k",
+  "name": "Campus Universidad Complutense",
+  "lat": 40.44782,
+  "lng": -3.72859,
+  "h3_index": "88390cb189fffff"
+ },
+ {
+  "tm_id": "Z198xZG2Z7dk",
+  "name": "Santiago Bernabeu Stadium",
+  "lat": 40.45243,
+  "lng": -3.68681,
+  "h3_index": "88390cb19bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdk71",
+  "name": "Zoo Aquarium Madrid",
+  "lat": 40.42143,
+  "lng": -3.75367,
+  "h3_index": "88390cbadbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeae7",
+  "name": "Khitai",
+  "lat": 40.45449,
+  "lng": -3.69404,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkk71",
+  "name": "NO USAR",
+  "lat": 40.45449,
+  "lng": -3.69404,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkkF7",
+  "name": "Sala Rockin (Ant. Sala Khitai)",
+  "lat": 40.45449,
+  "lng": -3.69404,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZFF",
+  "name": "Sound Stage",
+  "lat": 40.45449,
+  "lng": -3.69404,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6aAk",
+  "name": "Sala Almonte",
+  "lat": 40.45556,
+  "lng": -3.6892,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71Ak",
+  "name": "Sala Black Box - Pal. Vistalegre",
+  "lat": 40.38707,
+  "lng": -3.74166,
+  "h3_index": "88390cba95fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAAve",
+  "name": "Garaje Aída",
+  "lat": 40.45757,
+  "lng": -3.6926,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAvF",
+  "name": "Sala Jimmy Jazz",
+  "lat": 40.3902,
+  "lng": -3.6606,
+  "h3_index": "88390ca31bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7kF",
+  "name": "Sala Boom Room",
+  "lat": 40.4582,
+  "lng": -3.68602,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkkk",
+  "name": "NHCollection Madrid Eurobuildin",
+  "lat": 40.45826,
+  "lng": -3.68587,
+  "h3_index": "88390cb0a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ77v7",
+  "name": "Koh Tao Madrid",
+  "lat": 40.4583,
+  "lng": -3.68276,
+  "h3_index": "88390cb0a7fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ677",
+  "name": "Sala Live!",
+  "lat": 40.38352,
+  "lng": -3.7475,
+  "h3_index": "88390cbab9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7vF",
+  "name": "Caja Mágica",
+  "lat": 40.36981,
+  "lng": -3.6844,
+  "h3_index": "88390ca33dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdkFF",
+  "name": "Salón de Actos",
+  "lat": 40.46233,
+  "lng": -3.66897,
+  "h3_index": "88390cb0a3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZke1e",
+  "name": "Club de Campo",
+  "lat": 40.44836,
+  "lng": -3.75927,
+  "h3_index": "88390cb113fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdaak",
+  "name": "Hotel WeAre Chamartín",
+  "lat": 40.46919,
+  "lng": -3.68641,
+  "h3_index": "88390cb0a9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71dF",
+  "name": "Espacio MEEU Estación Chamartín",
+  "lat": 40.47125,
+  "lng": -3.68349,
+  "h3_index": "88390cb0a9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeae1",
+  "name": "Macumba",
+  "lat": 40.47106,
+  "lng": -3.68246,
+  "h3_index": "88390cb0abfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6a6e",
+  "name": "LAB theClub",
+  "lat": 40.47138,
+  "lng": -3.68236,
+  "h3_index": "88390cb0abfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFee7",
+  "name": "Hotel Elba Alcalá",
+  "lat": 40.43892,
+  "lng": -3.63408,
+  "h3_index": "88390ca257fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6A7e",
+  "name": "Circo Quirós",
+  "lat": 40.36465,
+  "lng": -3.74127,
+  "h3_index": "88390cbab7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkv1F",
+  "name": "Auditorio Parque el Paraíso",
+  "lat": 40.42668,
+  "lng": -3.62483,
+  "h3_index": "88390ca215fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7v1",
+  "name": "Espacio 33",
+  "lat": 40.47909,
+  "lng": -3.68685,
+  "h3_index": "88390cb085fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFF1",
+  "name": "Sala Tucana",
+  "lat": 40.45146,
+  "lng": -3.77674,
+  "h3_index": "88390cb11dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ766e",
+  "name": "La Nave",
+  "lat": 40.34781,
+  "lng": -3.69855,
+  "h3_index": "88390ca327fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFF7",
+  "name": "Belako Madrid",
+  "lat": 40.48614,
+  "lng": -3.67778,
+  "h3_index": "88390cb081fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFFe",
+  "name": "Autocine Madrid Race",
+  "lat": 40.48614,
+  "lng": -3.67778,
+  "h3_index": "88390cb081fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7ve",
+  "name": "Estadio Vallehermoso",
+  "lat": 40.44159,
+  "lng": -3.79326,
+  "h3_index": "88390cb107fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe1ee",
+  "name": "Centro Nacional de Golf",
+  "lat": 40.48622,
+  "lng": -3.73484,
+  "h3_index": "88390cb039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdkA7",
+  "name": "Faunia",
+  "lat": 40.39194,
+  "lng": -3.61264,
+  "h3_index": "88390ca051fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFed7",
+  "name": "Hipódromo de Zarzuela",
+  "lat": 40.46427,
+  "lng": -3.78219,
+  "h3_index": "88390cb157fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdF7k",
+  "name": "Palacio Municipal - IFEMA MADRID",
+  "lat": 40.46218,
+  "lng": -3.61687,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFA1e",
+  "name": "Teatro San Pol",
+  "lat": 40.4239,
+  "lng": -3.8094,
+  "h3_index": "88390cb121fffff"
+ },
+ {
+  "tm_id": "Z598xZG2ZeFk7",
+  "name": "Estadio Metropolitano",
+  "lat": 40.43637,
+  "lng": -3.59958,
+  "h3_index": "88390ca2cdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6F77",
+  "name": "Parking Riyadh Air Metropolitano",
+  "lat": 40.43624,
+  "lng": -3.59947,
+  "h3_index": "88390ca2cdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFA11",
+  "name": "Galería Inesperada",
+  "lat": 40.43624,
+  "lng": -3.59947,
+  "h3_index": "88390ca2cdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZad67",
+  "name": "Paquetes VIP- Metropolitano",
+  "lat": 40.43624,
+  "lng": -3.59947,
+  "h3_index": "88390ca2cdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7ae",
+  "name": "Estadio Wanda Metropolitano",
+  "lat": 40.43624,
+  "lng": -3.59947,
+  "h3_index": "88390ca2cdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAeek",
+  "name": "IFEMA - Pabellón 9",
+  "lat": 40.46814,
+  "lng": -3.61979,
+  "h3_index": "88390cb563fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7ave",
+  "name": "Pabellón 12 de IFEMA",
+  "lat": 40.4651,
+  "lng": -3.61642,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dkF",
+  "name": "REC. FERIAL IFEMA MADRID_PAB. 12",
+  "lat": 40.46423,
+  "lng": -3.61532,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7aa1",
+  "name": "IFEMA -  Pabellon 12 y 14",
+  "lat": 40.46423,
+  "lng": -3.61532,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6kA1",
+  "name": "REC. FERIAL IFEMA MADRID_PAB. 6",
+  "lat": 40.46558,
+  "lng": -3.61655,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7a6F",
+  "name": "IFEMA - Pabellón 8",
+  "lat": 40.46558,
+  "lng": -3.61655,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkA6e",
+  "name": "IFEMA - Pabellón 5",
+  "lat": 40.46558,
+  "lng": -3.61655,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaA1",
+  "name": "Escenario 2 IFEMA",
+  "lat": 40.46558,
+  "lng": -3.61655,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7a1e",
+  "name": "Valdebebas - IFEMA",
+  "lat": 40.47401,
+  "lng": -3.6254,
+  "h3_index": "88390cb561fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdAF1",
+  "name": "Ciudad Raqueta",
+  "lat": 40.49949,
+  "lng": -3.71311,
+  "h3_index": "88390cb013fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkav1",
+  "name": "Puri Beach",
+  "lat": 40.46744,
+  "lng": -3.61689,
+  "h3_index": "88390cb563fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkavk",
+  "name": "Escenario Cine IFEMA",
+  "lat": 40.46744,
+  "lng": -3.61689,
+  "h3_index": "88390cb563fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ7Fk",
+  "name": "Ciudad de la Raqueta",
+  "lat": 40.49996,
+  "lng": -3.71181,
+  "h3_index": "88390cb013fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7vak",
+  "name": "Parking IFEMA",
+  "lat": 40.46423,
+  "lng": -3.61313,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAd61",
+  "name": "Pabellón 1 de IFEMA",
+  "lat": 40.46423,
+  "lng": -3.61313,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7ak",
+  "name": "Pabellón 7 de IFEMA",
+  "lat": 40.46423,
+  "lng": -3.61313,
+  "h3_index": "88390cb529fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFd1",
+  "name": "Sala ReviLive",
+  "lat": 40.40145,
+  "lng": -3.59041,
+  "h3_index": "88390ca2adfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaea7",
+  "name": "Souvenir Ticket",
+  "lat": 40.43786,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaeae",
+  "name": "Souvenir Ticket",
+  "lat": 40.43786,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaeak",
+  "name": "Souvenir Ticket",
+  "lat": 40.43786,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6FeF",
+  "name": "Fan Club Bundles",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d61",
+  "name": "Collector",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d6F",
+  "name": "Collector",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d6k",
+  "name": "Collector",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dFe",
+  "name": "Collector",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaFF",
+  "name": "Evento Online",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaFk",
+  "name": "Evento Online",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaaF",
+  "name": "Evento Online",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkaae",
+  "name": "Teatro Online",
+  "lat": 40.43787,
+  "lng": -3.81962,
+  "h3_index": "88390cb167fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ66kF",
+  "name": "Auditorio Plácido Domingo",
+  "lat": 40.51086,
+  "lng": -3.69678,
+  "h3_index": "88390cb0c9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFev1",
+  "name": "Hotel Axor Feria",
+  "lat": 40.44801,
+  "lng": -3.5832,
+  "h3_index": "88390ca2cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFeeF",
+  "name": "Hotel Senator Barajas",
+  "lat": 40.45876,
+  "lng": -3.58507,
+  "h3_index": "88390cb531fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd1ke",
+  "name": "La Cubierta De Leganés",
+  "lat": 40.326,
+  "lng": -3.75859,
+  "h3_index": "88390cb8e3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAeA1",
+  "name": "Discoteca La Cantera",
+  "lat": 40.32626,
+  "lng": -3.76119,
+  "h3_index": "88390cb8e7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe6ve",
+  "name": "Pendiente de confirmar",
+  "lat": 40.30825,
+  "lng": -3.73239,
+  "h3_index": "88390caa49fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7dd1",
+  "name": "Polideportivo Mpal. San Isidro",
+  "lat": 40.30095,
+  "lng": -3.73394,
+  "h3_index": "88390caa49fffff"
+ }
+]

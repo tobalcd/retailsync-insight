@@ -1,0 +1,541 @@
+[
+ {
+  "tm_id": "Z598xZ2qZev61",
+  "name": "Plaza de Toros de Valencia",
+  "lat": 39.46704,
+  "lng": -0.37591,
+  "h3_index": "8839540ad5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZa1k",
+  "name": "Sala Jerusalem",
+  "lat": 39.46462,
+  "lng": -0.38023,
+  "h3_index": "8839540ad5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAdA1",
+  "name": "Palau Alameda",
+  "lat": 39.47268,
+  "lng": -0.365,
+  "h3_index": "8839540ad3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ7ae",
+  "name": "Sala Moon",
+  "lat": 39.45891,
+  "lng": -0.38576,
+  "h3_index": "8839540a89fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFk67",
+  "name": "Roig Arena",
+  "lat": 39.44949,
+  "lng": -0.3661,
+  "h3_index": "8839540a95fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFee",
+  "name": "Auditorio Roig Arena",
+  "lat": 39.44961,
+  "lng": -0.36339,
+  "h3_index": "8839540a95fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ7FF",
+  "name": "Palacio de Congresos de Valencia",
+  "lat": 39.49622,
+  "lng": -0.40205,
+  "h3_index": "883954013dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeF67",
+  "name": "Sala Repvblicca",
+  "lat": 39.47256,
+  "lng": -0.427,
+  "h3_index": "8839540a19fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAa7",
+  "name": "Sala Rock City",
+  "lat": 39.51172,
+  "lng": -0.36083,
+  "h3_index": "88395401c5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6kd1",
+  "name": "Ateneo Mercantil de Valencia",
+  "lat": 39.4709,
+  "lng": -0.37625,
+  "h3_index": "8839540ad1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6A61",
+  "name": "Varios",
+  "lat": 39.47061,
+  "lng": -0.3795,
+  "h3_index": "8839540ad5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6AFe",
+  "name": "Varios",
+  "lat": 39.47061,
+  "lng": -0.3795,
+  "h3_index": "8839540ad5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1FF",
+  "name": "Museo de la Seda",
+  "lat": 39.47086,
+  "lng": -0.38098,
+  "h3_index": "8839540addfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA1AF",
+  "name": "Bus Turístic Valencia",
+  "lat": 39.47414,
+  "lng": -0.37579,
+  "h3_index": "8839540ad1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6vv1",
+  "name": "Real Parr. de los Santos Juanes",
+  "lat": 39.47426,
+  "lng": -0.37932,
+  "h3_index": "8839540addfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6FkF",
+  "name": "Radio City",
+  "lat": 39.47496,
+  "lng": -0.38075,
+  "h3_index": "8839540addfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk16e",
+  "name": "Iglesia de San Nicolás",
+  "lat": 39.47647,
+  "lng": -0.37869,
+  "h3_index": "8839540ad9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZka6k",
+  "name": "Peter Rock Club",
+  "lat": 39.47621,
+  "lng": -0.38162,
+  "h3_index": "8839540addfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAve7",
+  "name": "Nolich",
+  "lat": 39.46174,
+  "lng": -0.37775,
+  "h3_index": "8839540a8bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvee",
+  "name": "Nolich",
+  "lat": 39.46174,
+  "lng": -0.37775,
+  "h3_index": "8839540a8bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZke7",
+  "name": "Loco Club",
+  "lat": 39.4712,
+  "lng": -0.38707,
+  "h3_index": "8839540addfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZed61",
+  "name": "Jardines de Viveros",
+  "lat": 39.48056,
+  "lng": -0.3677,
+  "h3_index": "8839540adbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAve",
+  "name": "Sala LaLa",
+  "lat": 39.46508,
+  "lng": -0.39377,
+  "h3_index": "8839540ac3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ6ak",
+  "name": "16 Toneladas",
+  "lat": 39.48123,
+  "lng": -0.38775,
+  "h3_index": "8839540137fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFv7",
+  "name": "Estadio Mestalla Valencia C.F.",
+  "lat": 39.47457,
+  "lng": -0.3582,
+  "h3_index": "88395401adfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dv1",
+  "name": "Auditori (P. de les Arts)",
+  "lat": 39.45804,
+  "lng": -0.35813,
+  "h3_index": "8839540a91fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1d7",
+  "name": "Sala Principal (P. de les Arts)",
+  "lat": 39.45804,
+  "lng": -0.35813,
+  "h3_index": "8839540a91fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFda1",
+  "name": "El Volander",
+  "lat": 39.4714,
+  "lng": -0.40084,
+  "h3_index": "8839540ac1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6vaF",
+  "name": "Pabellón Mcpal Fuente de S. Luís",
+  "lat": 39.45183,
+  "lng": -0.36843,
+  "h3_index": "8839540a83fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeaA1",
+  "name": "Pabellon Fuente de San Luis",
+  "lat": 39.45169,
+  "lng": -0.3661,
+  "h3_index": "8839540a95fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6AF7",
+  "name": "Pavelló Mpal. Font de Sant Lluís",
+  "lat": 39.45168,
+  "lng": -0.36604,
+  "h3_index": "8839540a95fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe61e",
+  "name": "Palau de les Arts Reina Sofía",
+  "lat": 39.45677,
+  "lng": -0.35603,
+  "h3_index": "8839540a91fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d67",
+  "name": "Teatre La Plazeta",
+  "lat": 39.49094,
+  "lng": -0.37314,
+  "h3_index": "88395401e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkF7e",
+  "name": "Teatre Martin Soler",
+  "lat": 39.45497,
+  "lng": -0.35632,
+  "h3_index": "8839540a91fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA1ke",
+  "name": "Visitas Guiadas en Valencia",
+  "lat": 39.45612,
+  "lng": -0.35457,
+  "h3_index": "8839540a91fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ1Fe",
+  "name": "Sala Wah Wah",
+  "lat": 39.4708,
+  "lng": -0.34741,
+  "h3_index": "88395401a7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6d1k",
+  "name": "La Salà",
+  "lat": 39.47078,
+  "lng": -0.34706,
+  "h3_index": "88395401a7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAae1",
+  "name": "Sala Matisse",
+  "lat": 39.47075,
+  "lng": -0.34653,
+  "h3_index": "88395401a7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6d1",
+  "name": "Matisse Club",
+  "lat": 39.47079,
+  "lng": -0.34653,
+  "h3_index": "88395401a7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZke17",
+  "name": "Sala La Cruz",
+  "lat": 39.448,
+  "lng": -0.38568,
+  "h3_index": "8839540a81fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7F7",
+  "name": "Carpa de Circo Alaska",
+  "lat": 39.45806,
+  "lng": -0.40208,
+  "h3_index": "8839540aebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFke1",
+  "name": "Mya Club",
+  "lat": 39.45436,
+  "lng": -0.35221,
+  "h3_index": "8839540a91fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAAA1",
+  "name": "La 3 Club",
+  "lat": 39.47357,
+  "lng": -0.34459,
+  "h3_index": "88395401a1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFAvF",
+  "name": "La Sala del Ciutat",
+  "lat": 39.4953,
+  "lng": -0.36462,
+  "h3_index": "88395401e1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdA7F",
+  "name": "Bioparc Valencia",
+  "lat": 39.4786,
+  "lng": -0.41075,
+  "h3_index": "8839540127fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6F7",
+  "name": "Oceanogràfic de Valencia",
+  "lat": 39.45294,
+  "lng": -0.34698,
+  "h3_index": "8839540a93fffff"
+ },
+ {
+  "tm_id": "Z598xZG2ZeaA1",
+  "name": "Polideportivo Beteró",
+  "lat": 39.47563,
+  "lng": -0.33624,
+  "h3_index": "88395401a3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkeek",
+  "name": "Casino CIRSA",
+  "lat": 39.49542,
+  "lng": -0.40395,
+  "h3_index": "883954013dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkd6F",
+  "name": "Teatre el Musical",
+  "lat": 39.46466,
+  "lng": -0.33207,
+  "h3_index": "8839540f49fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkv6F",
+  "name": "Carpa Circo Raluy Legacy",
+  "lat": 39.46178,
+  "lng": -0.3324,
+  "h3_index": "8839540f41fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe1A1",
+  "name": "Explanada del Edificio del Reloj",
+  "lat": 39.46155,
+  "lng": -0.33184,
+  "h3_index": "8839540f41fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAF7k",
+  "name": "Parque Dr. Lluch",
+  "lat": 39.47293,
+  "lng": -0.33026,
+  "h3_index": "88395401b5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFa71",
+  "name": "Antiguo Recinto Estación Grau",
+  "lat": 39.45831,
+  "lng": -0.33237,
+  "h3_index": "8839540f41fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAdve",
+  "name": "Carpa Cirque du Soleil",
+  "lat": 39.45768,
+  "lng": -0.33263,
+  "h3_index": "8839540f41fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAe11",
+  "name": "Gran Carpa Cirque du Soleil Vlc.",
+  "lat": 39.45768,
+  "lng": -0.33263,
+  "h3_index": "8839540f41fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7A7",
+  "name": "Marina Norte",
+  "lat": 39.46237,
+  "lng": -0.32823,
+  "h3_index": "8839540f41fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAaAF",
+  "name": "Mundo Marino Excursiones",
+  "lat": 39.46186,
+  "lng": -0.32694,
+  "h3_index": "8839540f4bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6e6k",
+  "name": "Sala Repvblicca II",
+  "lat": 39.47256,
+  "lng": -0.427,
+  "h3_index": "8839540a19fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd1aF",
+  "name": "Sala Repvblicca 2",
+  "lat": 39.47256,
+  "lng": -0.427,
+  "h3_index": "8839540a19fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7eeF",
+  "name": "Auditorio Marina Sur",
+  "lat": 39.46062,
+  "lng": -0.32445,
+  "h3_index": "8839540f4bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7vvF",
+  "name": "La Marina",
+  "lat": 39.46062,
+  "lng": -0.32445,
+  "h3_index": "8839540f4bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAa7",
+  "name": "La Marina de Valencia",
+  "lat": 39.46062,
+  "lng": -0.32445,
+  "h3_index": "8839540f4bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk6dk",
+  "name": "Paberse",
+  "lat": 39.42643,
+  "lng": -0.38958,
+  "h3_index": "8839540aa7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkve1",
+  "name": "Auditorio Municipal de Burjassot",
+  "lat": 39.50685,
+  "lng": -0.41094,
+  "h3_index": "8839540101fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZda77",
+  "name": "La Marina",
+  "lat": 39.45834,
+  "lng": -0.31704,
+  "h3_index": "8839540f43fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6FdF",
+  "name": "Varadero Club",
+  "lat": 39.46427,
+  "lng": -0.31184,
+  "h3_index": "8839540f5dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeake",
+  "name": "Feria Valencia Pabellón 1",
+  "lat": 39.50282,
+  "lng": -0.42835,
+  "h3_index": "8839540163fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeaAF",
+  "name": "Feria de Valencia (Pabellon 8)",
+  "lat": 39.50316,
+  "lng": -0.42835,
+  "h3_index": "8839540163fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZedA1",
+  "name": "Paterna",
+  "lat": 39.50371,
+  "lng": -0.44316,
+  "h3_index": "883954016dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7eke",
+  "name": "Sala Fussion Flamenco",
+  "lat": 39.40881,
+  "lng": -0.39122,
+  "h3_index": "8839540813fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF6A7",
+  "name": "Pabellón Jaume Ortí",
+  "lat": 39.46112,
+  "lng": -0.45981,
+  "h3_index": "8839540a01fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZevkF",
+  "name": "Retro Valencia Disco",
+  "lat": 39.41151,
+  "lng": -0.33723,
+  "h3_index": "88395408d3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZee6k",
+  "name": "Alaquàs",
+  "lat": 39.45634,
+  "lng": -0.45985,
+  "h3_index": "8839540a05fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ777k",
+  "name": "Sala Spook",
+  "lat": 39.41064,
+  "lng": -0.33535,
+  "h3_index": "8839540899fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAkAF",
+  "name": "Noches de Bohemia",
+  "lat": 39.51111,
+  "lng": -0.45597,
+  "h3_index": "88395418bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk667",
+  "name": "Oh! Valencia",
+  "lat": 39.38726,
+  "lng": -0.40175,
+  "h3_index": "8839540833fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6vdk",
+  "name": "Tours y Excursiones en Barco",
+  "lat": 39.4077,
+  "lng": -0.5016,
+  "h3_index": "8839540b07fffff"
+ }
+]

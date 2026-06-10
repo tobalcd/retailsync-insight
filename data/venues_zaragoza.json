@@ -1,0 +1,212 @@
+[
+ {
+  "tm_id": "Z198xZ2qZAvk",
+  "name": "Sala Oasis",
+  "lat": 41.65511,
+  "lng": -0.88565,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ676e",
+  "name": "S.Multiusos-Auditorio Zaragoza",
+  "lat": 41.63778,
+  "lng": -0.90038,
+  "h3_index": "8839701255fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZedAe",
+  "name": "Sala López",
+  "lat": 41.65844,
+  "lng": -0.87478,
+  "h3_index": "8839708d63fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZd67",
+  "name": "Pabellón Príncipe Felipe",
+  "lat": 41.63527,
+  "lng": -0.8661,
+  "h3_index": "8839708d27fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkA6k",
+  "name": "Explanada del Recinto Expo",
+  "lat": 41.66824,
+  "lng": -0.91437,
+  "h3_index": "88397088b9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7vF",
+  "name": "Hïde Club",
+  "lat": 41.6518,
+  "lng": -0.88547,
+  "h3_index": "883970125bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7aa7",
+  "name": "Sala Creedence",
+  "lat": 41.65298,
+  "lng": -0.88535,
+  "h3_index": "883970125bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe711",
+  "name": "Sala Zeta",
+  "lat": 41.64299,
+  "lng": -0.89201,
+  "h3_index": "8839701251fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ1dk",
+  "name": "Oasis Club Teatro",
+  "lat": 41.65515,
+  "lng": -0.88562,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67k7",
+  "name": "Rock & Blues Café",
+  "lat": 41.65331,
+  "lng": -0.88105,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZA6k",
+  "name": "Sala Las Armas",
+  "lat": 41.657,
+  "lng": -0.8853,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZke6e",
+  "name": "Casa del Loco",
+  "lat": 41.65377,
+  "lng": -0.87904,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeakk",
+  "name": "La Lata de Bombillas",
+  "lat": 41.65492,
+  "lng": -0.87853,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6e67",
+  "name": "Sala La Ley Seca",
+  "lat": 41.63869,
+  "lng": -0.88725,
+  "h3_index": "8839701253fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFkk7",
+  "name": "Plaza del Pilar",
+  "lat": 41.65634,
+  "lng": -0.8789,
+  "h3_index": "8839708d67fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF671",
+  "name": "Supernova",
+  "lat": 41.66178,
+  "lng": -0.88832,
+  "h3_index": "8839708d61fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAAk",
+  "name": "Teatro de las Esquinas",
+  "lat": 41.64682,
+  "lng": -0.90752,
+  "h3_index": "883970125dfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZF71",
+  "name": "Sala Multiusos",
+  "lat": 41.6383,
+  "lng": -0.90257,
+  "h3_index": "8839701255fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZdFe",
+  "name": "Auditorio de Zaragoza - Sala Mo",
+  "lat": 41.6383,
+  "lng": -0.90257,
+  "h3_index": "8839701255fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZevv7",
+  "name": "Audit. de Zaragoza - Sala Mozart",
+  "lat": 41.6383,
+  "lng": -0.90257,
+  "h3_index": "8839701255fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7vFk",
+  "name": "Centro Cívico Delicias",
+  "lat": 41.65584,
+  "lng": -0.90648,
+  "h3_index": "88397088b7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFvak",
+  "name": "Estadio la Romareda",
+  "lat": 41.63647,
+  "lng": -0.90182,
+  "h3_index": "8839701255fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67kF",
+  "name": "Centro Cívico Almozara",
+  "lat": 41.66199,
+  "lng": -0.90113,
+  "h3_index": "88397088b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6777",
+  "name": "Sala Lo Intento",
+  "lat": 41.64337,
+  "lng": -0.86625,
+  "h3_index": "8839708d21fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAakF",
+  "name": "Acuario de Zaragoza",
+  "lat": 41.6692,
+  "lng": -0.90085,
+  "h3_index": "88397088bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkAv1",
+  "name": "Palacio de Congresos de Zaragoza",
+  "lat": 41.66882,
+  "lng": -0.90669,
+  "h3_index": "88397088bbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6e11",
+  "name": "El Túnel",
+  "lat": 41.65011,
+  "lng": -0.9243,
+  "h3_index": "8839701249fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6aA1",
+  "name": "Parque Deportivo Ebro",
+  "lat": 41.6679,
+  "lng": -0.92274,
+  "h3_index": "8839708887fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6de7",
+  "name": "Carpa Mystike",
+  "lat": 41.62081,
+  "lng": -0.93833,
+  "h3_index": "883970126dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAed7",
+  "name": "Feria de Zaragoza",
+  "lat": 41.62989,
+  "lng": -0.97879,
+  "h3_index": "8839708981fffff"
+ }
+]

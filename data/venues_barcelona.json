@@ -1,0 +1,1556 @@
+[
+ {
+  "tm_id": "Z198xZ2qZFd7",
+  "name": "Varios Recintos",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFka7",
+  "name": "Gran Teatre del Liceu",
+  "lat": 41.3802,
+  "lng": 2.17111,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAd6e",
+  "name": "Teatre Coliseum",
+  "lat": 41.38889,
+  "lng": 2.16613,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk6ee",
+  "name": "Servicio Bus Circuit Festival",
+  "lat": 41.38812,
+  "lng": 2.18602,
+  "h3_index": "88394460e7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ77dF",
+  "name": "Paral·lel 62",
+  "lat": 41.3751,
+  "lng": 2.16973,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZF11",
+  "name": "La 2 de Apolo",
+  "lat": 41.37441,
+  "lng": 2.16953,
+  "h3_index": "88394461d1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkdk1",
+  "name": "WOLF",
+  "lat": 41.39589,
+  "lng": 2.18859,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ771",
+  "name": "Razzmatazz 3",
+  "lat": 41.39701,
+  "lng": 2.19147,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZd6k",
+  "name": "Sala Razzmatazz 2",
+  "lat": 41.39701,
+  "lng": 2.19147,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd1de",
+  "name": "Razzmatazz 2",
+  "lat": 41.39701,
+  "lng": 2.19147,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdvF1",
+  "name": "Sala Razzmatazz 3",
+  "lat": 41.39701,
+  "lng": 2.19147,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkeF",
+  "name": "Sala Razzmatazz 1",
+  "lat": 41.39772,
+  "lng": 2.19111,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZee1F",
+  "name": "Sala Razzmatazz",
+  "lat": 41.39772,
+  "lng": 2.19111,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFee",
+  "name": "Cúpula de las Arenas",
+  "lat": 41.37637,
+  "lng": 2.14931,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdAdF",
+  "name": "La Nau",
+  "lat": 41.39417,
+  "lng": 2.19727,
+  "h3_index": "883944608dfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ7Fe",
+  "name": "Luz de Gas",
+  "lat": 41.39461,
+  "lng": 2.14906,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7a6e",
+  "name": "Safari Disco Club",
+  "lat": 41.37843,
+  "lng": 2.14477,
+  "h3_index": "8839446035fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkk7",
+  "name": "SALA BOVEDA",
+  "lat": 41.39847,
+  "lng": 2.2,
+  "h3_index": "883944608dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd7eF",
+  "name": "Estadi Olímpic Lluis Companys",
+  "lat": 41.36476,
+  "lng": 2.15565,
+  "h3_index": "88394461c3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ1ae",
+  "name": "Poble Espanyol",
+  "lat": 41.36891,
+  "lng": 2.14885,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdAaF",
+  "name": "Sala Upload - Poble Espanyol",
+  "lat": 41.3688,
+  "lng": 2.14823,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7ekk",
+  "name": "Sala Input",
+  "lat": 41.36865,
+  "lng": 2.14775,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe6d7",
+  "name": "Palau Sant Jordi",
+  "lat": 41.36337,
+  "lng": 2.15259,
+  "h3_index": "88394461c3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ1e1",
+  "name": "Sant Jordi Club",
+  "lat": 41.36323,
+  "lng": 2.15257,
+  "h3_index": "88394461c3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZae77",
+  "name": "Plaza de Toros de Ledesma",
+  "lat": 41.40892,
+  "lng": 2.19218,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaevk",
+  "name": "P. de Toros de Alcalá de Henares",
+  "lat": 41.40892,
+  "lng": 2.19218,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAdk",
+  "name": "Sala Bikini",
+  "lat": 41.38992,
+  "lng": 2.13678,
+  "h3_index": "883944602bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZae6F",
+  "name": "El Bosque Encantado",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZae71",
+  "name": "Solaris Nerja",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaeAk",
+  "name": "FYCMA - Pal. Ferias y Congresos",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZav61",
+  "name": "Carmen de los Mártires",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZav6e",
+  "name": "Cuarto Real de Santo Domingo",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavFF",
+  "name": "Pingüinos Arena",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavFk",
+  "name": "Espacio Madriz",
+  "lat": 41.40892,
+  "lng": 2.19546,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavvk",
+  "name": "Estadio Municipal de Armilla",
+  "lat": 41.40983,
+  "lng": 2.19546,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavkk",
+  "name": "Parque de Santa Margarita",
+  "lat": 41.41219,
+  "lng": 2.19873,
+  "h3_index": "88394460c3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZek7k",
+  "name": "Fira 2 Barcelona Gran Via",
+  "lat": 41.35343,
+  "lng": 2.13346,
+  "h3_index": "88394461e9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7Fe",
+  "name": "Auditorio Forum CCIB",
+  "lat": 41.4106,
+  "lng": 2.22064,
+  "h3_index": "88394460d7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeeAe",
+  "name": "Palau Olímpic Vall d'Hebron",
+  "lat": 41.42807,
+  "lng": 2.14438,
+  "h3_index": "8839446051fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6kk",
+  "name": "SeaseaClub",
+  "lat": 41.41371,
+  "lng": 2.22695,
+  "h3_index": "88394460d3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ7AF",
+  "name": "Salamandra Sala 1",
+  "lat": 41.36011,
+  "lng": 2.10917,
+  "h3_index": "8839446111fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZaF1",
+  "name": "La Farga",
+  "lat": 41.36187,
+  "lng": 2.10447,
+  "h3_index": "883944611dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6av7",
+  "name": "Bajo de la Gran Carpa",
+  "lat": 41.34847,
+  "lng": 2.10324,
+  "h3_index": "8839446139fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFA6F",
+  "name": "Olimpic Arena Badalona",
+  "lat": 41.44248,
+  "lng": 2.2296,
+  "h3_index": "8839446769fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFak1",
+  "name": "New Fizz",
+  "lat": 41.39097,
+  "lng": 2.07783,
+  "h3_index": "8839446331fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6k11",
+  "name": "Can Reon",
+  "lat": 41.49039,
+  "lng": 2.27237,
+  "h3_index": "8839446669fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZF77",
+  "name": "Main Party",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZF7e",
+  "name": "We Party",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZF7k",
+  "name": "Main Party",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZFd1",
+  "name": "We Party",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZFdF",
+  "name": "Megawoof",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZFde",
+  "name": "Varios Recintos",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZFdk",
+  "name": "Megawoof",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7eF1",
+  "name": "Recinto por confirmar",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7eFF",
+  "name": "Recinto por confirmar",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZev7e",
+  "name": "Varios Recintos Girlie Circuit",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZevd1",
+  "name": "Varios Recintos Girlie Circuit",
+  "lat": 41.38506,
+  "lng": 2.1734,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7d1",
+  "name": "Museu Picasso",
+  "lat": 41.38522,
+  "lng": 2.17214,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkeee",
+  "name": "Palau de la Balmesiana",
+  "lat": 41.38559,
+  "lng": 2.1745,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7de",
+  "name": "The Gaudí Exhibition Center",
+  "lat": 41.38428,
+  "lng": 2.17445,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZka61",
+  "name": "Sant Felip Neri",
+  "lat": 41.38345,
+  "lng": 2.17286,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7a1F",
+  "name": "Teatre Poliorama",
+  "lat": 41.38396,
+  "lng": 2.17079,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7117",
+  "name": "Palau de la Música C. Orfeó",
+  "lat": 41.38772,
+  "lng": 2.17319,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkva7",
+  "name": "Capella de Santa Àgata",
+  "lat": 41.38462,
+  "lng": 2.17684,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdda1",
+  "name": "Palau de la Música Catalana",
+  "lat": 41.38758,
+  "lng": 2.17531,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk11F",
+  "name": "Museu de l'Eròtica",
+  "lat": 41.38226,
+  "lng": 2.1726,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7111",
+  "name": "Esglèsia Santa Maria del Pi",
+  "lat": 41.38216,
+  "lng": 2.17396,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk177",
+  "name": "CitySightseeing España",
+  "lat": 41.38625,
+  "lng": 2.1693,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk17k",
+  "name": "CitySightseeing España",
+  "lat": 41.38625,
+  "lng": 2.1693,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk17F",
+  "name": "Big Fun Museum",
+  "lat": 41.38183,
+  "lng": 2.17295,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6167",
+  "name": "Teatre Borrás",
+  "lat": 41.38878,
+  "lng": 2.17362,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ616F",
+  "name": "Teatre Borrás",
+  "lat": 41.38878,
+  "lng": 2.17362,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ616k",
+  "name": "Teatre Borrás",
+  "lat": 41.38878,
+  "lng": 2.17362,
+  "h3_index": "88394460e5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dk1",
+  "name": "Unite Hostel",
+  "lat": 41.38516,
+  "lng": 2.16828,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6kee",
+  "name": "The Bunker Club",
+  "lat": 41.38968,
+  "lng": 2.174,
+  "h3_index": "88394460edfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZaaF",
+  "name": "Club Sauvage",
+  "lat": 41.3805,
+  "lng": 2.17525,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvdk",
+  "name": "CCCB",
+  "lat": 41.38379,
+  "lng": 2.16678,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAa71",
+  "name": "Barcelona City Tour",
+  "lat": 41.38617,
+  "lng": 2.16658,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1A7",
+  "name": "Barcelona Card",
+  "lat": 41.38617,
+  "lng": 2.16658,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZd11",
+  "name": "Harlem Jazz Club",
+  "lat": 41.38115,
+  "lng": 2.17846,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFvF",
+  "name": "Jamboree",
+  "lat": 41.37971,
+  "lng": 2.17528,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAaek",
+  "name": "Marula Café",
+  "lat": 41.38015,
+  "lng": 2.17686,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7e6F",
+  "name": "New York Club",
+  "lat": 41.37917,
+  "lng": 2.1759,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAdFk",
+  "name": "Las Cuevas de Los Rajahs",
+  "lat": 41.38032,
+  "lng": 2.17934,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ6ke",
+  "name": "Basílica Santa María del Mar",
+  "lat": 41.38389,
+  "lng": 2.18207,
+  "h3_index": "88394460e7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk16F",
+  "name": "MACBA Museu d'Art Contemporani",
+  "lat": 41.38319,
+  "lng": 2.16468,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkkaF",
+  "name": "Casa Batlló",
+  "lat": 41.37871,
+  "lng": 2.17826,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFk61",
+  "name": "La Paloma",
+  "lat": 41.38239,
+  "lng": 2.16424,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1kF",
+  "name": "KBr Fundación Mapfre Barcelona",
+  "lat": 41.38864,
+  "lng": 2.16423,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7akF",
+  "name": "Sala Arena Madre",
+  "lat": 41.38854,
+  "lng": 2.16412,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFA1",
+  "name": "Sala Aribau",
+  "lat": 41.38613,
+  "lng": 2.16259,
+  "h3_index": "8839446033fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6eeF",
+  "name": "Carpa Mystike",
+  "lat": 41.37966,
+  "lng": 2.1819,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1Fk",
+  "name": "Museu de Cera de Barcelona",
+  "lat": 41.37712,
+  "lng": 2.17699,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA7Ae",
+  "name": "Port Vell",
+  "lat": 41.38074,
+  "lng": 2.18308,
+  "h3_index": "88394460e7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd6Ae",
+  "name": "Sala Magic Rock Club",
+  "lat": 41.38592,
+  "lng": 2.18501,
+  "h3_index": "88394460e7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6ae7",
+  "name": "Freedonia",
+  "lat": 41.3773,
+  "lng": 2.167,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkvaF",
+  "name": "Monestir de Sant Pau del Camp",
+  "lat": 41.37621,
+  "lng": 2.16949,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAv7e",
+  "name": "Fundació Antoni Tàpies",
+  "lat": 41.39155,
+  "lng": 2.16377,
+  "h3_index": "883944603bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZd17",
+  "name": "Teatre Barts Espai Club",
+  "lat": 41.3752,
+  "lng": 2.1696,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeFae",
+  "name": "Paral·lel 62  - Sala Club",
+  "lat": 41.3752,
+  "lng": 2.1696,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdk61",
+  "name": "Sala Barts",
+  "lat": 41.3751,
+  "lng": 2.16973,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1ek",
+  "name": "Teatre Apolo",
+  "lat": 41.37476,
+  "lng": 2.17041,
+  "h3_index": "88394461d1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAaF7",
+  "name": "L'Aquarium de Barcelona",
+  "lat": 41.37684,
+  "lng": 2.18231,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAaFk",
+  "name": "L'Aquarium de Barcelona",
+  "lat": 41.37684,
+  "lng": 2.18231,
+  "h3_index": "88394461dbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk117",
+  "name": "Museu Egipci de Barcelona",
+  "lat": 41.39362,
+  "lng": 2.16472,
+  "h3_index": "883944603bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvv1",
+  "name": "Tras. Ultramarinos Exploratorium",
+  "lat": 41.39529,
+  "lng": 2.16892,
+  "h3_index": "88394460edfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvvF",
+  "name": "Tras. Ultramarinos Exploratorium",
+  "lat": 41.39529,
+  "lng": 2.16892,
+  "h3_index": "88394460edfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6F7e",
+  "name": "Teatre Victoria",
+  "lat": 41.37481,
+  "lng": 2.16879,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAeFe",
+  "name": "Sala Apolo 2",
+  "lat": 41.3744,
+  "lng": 2.16738,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAd11",
+  "name": "El Molino",
+  "lat": 41.37448,
+  "lng": 2.16709,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkevF",
+  "name": "Sala Laut",
+  "lat": 41.37374,
+  "lng": 2.17,
+  "h3_index": "88394461d1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeFdk",
+  "name": "Café del Mar",
+  "lat": 41.37495,
+  "lng": 2.18206,
+  "h3_index": "88394460adfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7avk",
+  "name": "Teatre Condal",
+  "lat": 41.37492,
+  "lng": 2.16469,
+  "h3_index": "88394461d9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAad1",
+  "name": "Zoo de Barcelona",
+  "lat": 41.38633,
+  "lng": 2.18986,
+  "h3_index": "88394460e3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkka1",
+  "name": "La Pedrera-Casa Milà",
+  "lat": 41.39538,
+  "lng": 2.16196,
+  "h3_index": "883944603bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAee",
+  "name": "Campus Ciutadella Pompeu Fabra",
+  "lat": 41.38964,
+  "lng": 2.19036,
+  "h3_index": "88394460e3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAkde",
+  "name": "Discoteca Candy",
+  "lat": 41.3984,
+  "lng": 2.18073,
+  "h3_index": "88394460e9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7eFe",
+  "name": "Tango",
+  "lat": 41.38085,
+  "lng": 2.15459,
+  "h3_index": "8839446037fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeFF1",
+  "name": "Palacio del Flamenco",
+  "lat": 41.3936,
+  "lng": 2.15671,
+  "h3_index": "883944603bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71k7",
+  "name": "L'Auditori-Sala 4 Alic. Larrocha",
+  "lat": 41.39862,
+  "lng": 2.18314,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ716F",
+  "name": "L'auditori Espai 5",
+  "lat": 41.39866,
+  "lng": 2.18309,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZda6e",
+  "name": "Plaza de Toros Monumental",
+  "lat": 41.39979,
+  "lng": 2.18165,
+  "h3_index": "88394460e9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6Fkk",
+  "name": "Slow Barcelona",
+  "lat": 41.39356,
+  "lng": 2.15339,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6eFe",
+  "name": "Moll de la Marina",
+  "lat": 41.38679,
+  "lng": 2.19654,
+  "h3_index": "88394460a9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAdF",
+  "name": "Sala Catwalk",
+  "lat": 41.38598,
+  "lng": 2.19673,
+  "h3_index": "88394460a9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdva1",
+  "name": "Sala Rocksound",
+  "lat": 41.39715,
+  "lng": 2.19049,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z198xZG2ZF67",
+  "name": "SPAIN",
+  "lat": 41.374426,
+  "lng": 2.154655,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaddF",
+  "name": "CEM Joan Miró",
+  "lat": 41.37856,
+  "lng": 2.15135,
+  "h3_index": "8839446037fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6vd1",
+  "name": "Pacha Barcelona",
+  "lat": 41.38575,
+  "lng": 2.19706,
+  "h3_index": "88394460a9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZddve",
+  "name": "Worldcoo",
+  "lat": 41.39671,
+  "lng": 2.15459,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF6k7",
+  "name": "Sala Nou Racó 169",
+  "lat": 41.39179,
+  "lng": 2.15012,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe717",
+  "name": "Sala Vivaldi",
+  "lat": 41.3755,
+  "lng": 2.15133,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7Ae",
+  "name": "Basílica de la Sagrada Família",
+  "lat": 41.40363,
+  "lng": 2.1656,
+  "h3_index": "8839446017fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdvdk",
+  "name": "VOL (antigua BeGood)",
+  "lat": 41.39944,
+  "lng": 2.19114,
+  "h3_index": "88394460ebfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ6FF",
+  "name": "Sala Monasterio",
+  "lat": 41.38777,
+  "lng": 2.19926,
+  "h3_index": "8839446085fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkeAk",
+  "name": "Sala Sutton",
+  "lat": 41.39601,
+  "lng": 2.15155,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ671e",
+  "name": "Museu del Disseny",
+  "lat": 41.40245,
+  "lng": 2.18589,
+  "h3_index": "88394460c5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dAk",
+  "name": "Pulse",
+  "lat": 41.39561,
+  "lng": 2.15069,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZka17",
+  "name": "Arenas de Barcelona",
+  "lat": 41.3763,
+  "lng": 2.14931,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ66vk",
+  "name": "Heliogàbal",
+  "lat": 41.40324,
+  "lng": 2.16061,
+  "h3_index": "8839446015fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZddFk",
+  "name": "Sala B - Luz de Gas",
+  "lat": 41.39463,
+  "lng": 2.14906,
+  "h3_index": "8839446039fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeAke",
+  "name": "Palacio de Congresos de Montjuic",
+  "lat": 41.37219,
+  "lng": 2.15158,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFd1",
+  "name": "Palau de Congressos de Barcelona",
+  "lat": 41.37446,
+  "lng": 2.14939,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFkee",
+  "name": "American Magic VIP Pack. & Hosp.",
+  "lat": 41.36859,
+  "lng": 2.19094,
+  "h3_index": "88394460a5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7vFF",
+  "name": "Centre Artesà Tradicionàrius",
+  "lat": 41.40234,
+  "lng": 2.15449,
+  "h3_index": "8839446015fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7ek1",
+  "name": "Sala Safari",
+  "lat": 41.37843,
+  "lng": 2.14477,
+  "h3_index": "8839446035fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk61F",
+  "name": "Teatre Gaudí",
+  "lat": 41.40722,
+  "lng": 2.16759,
+  "h3_index": "8839446011fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71d1",
+  "name": "Ticketmaster",
+  "lat": 41.40145,
+  "lng": 2.19539,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkdAk",
+  "name": "Recinto Pruebas EIB",
+  "lat": 41.40145,
+  "lng": 2.19539,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dFF",
+  "name": "La Terrrazza",
+  "lat": 41.3688,
+  "lng": 2.14937,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZFe1",
+  "name": "The One",
+  "lat": 41.3684,
+  "lng": 2.14973,
+  "h3_index": "88394461c3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd1v7",
+  "name": "P.º de Jean Forestier s/n",
+  "lat": 41.36891,
+  "lng": 2.14885,
+  "h3_index": "88394461cbfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFkke",
+  "name": "Ticketmaster España",
+  "lat": 41.40152,
+  "lng": 2.19764,
+  "h3_index": "88394460c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7e11",
+  "name": "Hotel Barceló Sants",
+  "lat": 41.3796,
+  "lng": 2.14152,
+  "h3_index": "8839446035fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7da7",
+  "name": "Antiga Fàbrica Estrella Damm",
+  "lat": 41.40941,
+  "lng": 2.17799,
+  "h3_index": "8839446013fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdv67",
+  "name": "Salas Primavera Club",
+  "lat": 41.39774,
+  "lng": 2.20154,
+  "h3_index": "883944608dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdvk1",
+  "name": "Salas Primavera Club",
+  "lat": 41.39774,
+  "lng": 2.20154,
+  "h3_index": "883944608dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAeAk",
+  "name": "Monasterio",
+  "lat": 41.41038,
+  "lng": 2.1679,
+  "h3_index": "8839446011fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZd6Fe",
+  "name": "Lluïsos de Gràcia Teatre",
+  "lat": 41.40726,
+  "lng": 2.15556,
+  "h3_index": "883944601dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk1e1",
+  "name": "Casa Vicens",
+  "lat": 41.40437,
+  "lng": 2.14947,
+  "h3_index": "8839446003fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZevve",
+  "name": "Casino L´Aliança del Poble Nou",
+  "lat": 41.39981,
+  "lng": 2.2032,
+  "h3_index": "8839446089fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAkvk",
+  "name": "Teatre Auditori Municipal",
+  "lat": 41.41038,
+  "lng": 2.18541,
+  "h3_index": "88394460c5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6vk1",
+  "name": "Auditorio Axa",
+  "lat": 41.38946,
+  "lng": 2.13705,
+  "h3_index": "883944602bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZF6F",
+  "name": "Cotxeres de Sants",
+  "lat": 41.37527,
+  "lng": 2.13689,
+  "h3_index": "88394461c9fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7kv7",
+  "name": "Aud. Marina Norte-M. de Valencia",
+  "lat": 41.41039,
+  "lng": 2.19399,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZaeke",
+  "name": "Forus Alcalá Magna",
+  "lat": 41.40983,
+  "lng": 2.19546,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZavA7",
+  "name": "CABAL esports productions",
+  "lat": 41.40983,
+  "lng": 2.19546,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFFe1",
+  "name": "Estacionamiento Anella Olímpica",
+  "lat": 41.36049,
+  "lng": 2.15,
+  "h3_index": "88394461c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk777",
+  "name": "Gaudí Experiència",
+  "lat": 41.412,
+  "lng": 2.1514,
+  "h3_index": "883944601dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFaAk",
+  "name": "Kinepolis Ciudad de la Imagen",
+  "lat": 41.41219,
+  "lng": 2.19545,
+  "h3_index": "88394460c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF71F",
+  "name": "Sala La Deskomunal",
+  "lat": 41.37584,
+  "lng": 2.13233,
+  "h3_index": "8839446027fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7dk",
+  "name": "Park Güell",
+  "lat": 41.41353,
+  "lng": 2.15184,
+  "h3_index": "8839446057fffff"
+ },
+ {
+  "tm_id": "Z698xZb_Zak8_",
+  "name": "FC Barcelona",
+  "lat": 41.38836,
+  "lng": 2.12395,
+  "h3_index": "8839446029fffff"
+ },
+ {
+  "tm_id": "Z198xZb_ZAF7",
+  "name": "Bergenfest Dagspass Flere Scener",
+  "lat": 41.38092,
+  "lng": 2.12288,
+  "h3_index": "8839446021fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7177",
+  "name": "Palau Blaugrana",
+  "lat": 41.38014,
+  "lng": 2.12008,
+  "h3_index": "8839446021fffff"
+ },
+ {
+  "tm_id": "Z198xZG2Zd17",
+  "name": "Camp Nou Stadium",
+  "lat": 41.37905,
+  "lng": 2.12011,
+  "h3_index": "8839446025fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6v11",
+  "name": "Hotel Hilton Diagonal Mar",
+  "lat": 41.40867,
+  "lng": 2.21743,
+  "h3_index": "88394460d5fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6e1",
+  "name": "Jardines de Pedralbes",
+  "lat": 41.3865,
+  "lng": 2.1184,
+  "h3_index": "883944602dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvaF",
+  "name": "Teatre de Sarrià",
+  "lat": 41.40021,
+  "lng": 2.12064,
+  "h3_index": "8839446063fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAe6F",
+  "name": "Auditori del Fòrum",
+  "lat": 41.4111,
+  "lng": 2.21865,
+  "h3_index": "88394460d7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ777F",
+  "name": "Auditori Petit Parc del Fòrum",
+  "lat": 41.41143,
+  "lng": 2.22002,
+  "h3_index": "88394460d7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAaee",
+  "name": "Sala Up&Down",
+  "lat": 41.38118,
+  "lng": 2.11426,
+  "h3_index": "883944602dfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ76e",
+  "name": "Down Town",
+  "lat": 41.381,
+  "lng": 2.114,
+  "h3_index": "883944602dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdFkk",
+  "name": "Real Club de Polo de Barcelona",
+  "lat": 41.38174,
+  "lng": 2.11294,
+  "h3_index": "883944602dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkF1e",
+  "name": "Anfiteatre Parc del Fòrum",
+  "lat": 41.41146,
+  "lng": 2.22466,
+  "h3_index": "88394460d7fffff"
+ },
+ {
+  "tm_id": "KovZpZAn1lvA",
+  "name": "Parc del Forum",
+  "lat": 41.411467,
+  "lng": 2.224658,
+  "h3_index": "88394460d7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeFee",
+  "name": "Parc del Fòrum",
+  "lat": 41.41257,
+  "lng": 2.22799,
+  "h3_index": "88394460d3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ71ke",
+  "name": "Fàbrica de Creació Fabra i Coats",
+  "lat": 41.43375,
+  "lng": 2.19081,
+  "h3_index": "88394462bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeF77",
+  "name": "CDM Beach Club",
+  "lat": 41.41371,
+  "lng": 2.22914,
+  "h3_index": "88394460d3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZd7e",
+  "name": "Platja del Forum i Parc de Pau",
+  "lat": 41.41574,
+  "lng": 2.2296,
+  "h3_index": "88394460d3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7de1",
+  "name": "Hotel Alimara Barcelona",
+  "lat": 41.43387,
+  "lng": 2.14744,
+  "h3_index": "8839446059fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7e67",
+  "name": "Complex Esportiu Hospitalet Nord",
+  "lat": 41.37894,
+  "lng": 2.10286,
+  "h3_index": "8839446153fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAa7k",
+  "name": "Parque de Atracciones Tibidabo",
+  "lat": 41.42177,
+  "lng": 2.11958,
+  "h3_index": "8839446041fffff"
+ },
+ {
+  "tm_id": "Za98xZ2qZ6k",
+  "name": "Salamandra Sala 2",
+  "lat": 41.35833,
+  "lng": 2.10397,
+  "h3_index": "8839446115fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAk11",
+  "name": "The Garage",
+  "lat": 41.35435,
+  "lng": 2.10491,
+  "h3_index": "8839446115fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkF67",
+  "name": "Espai Zowie",
+  "lat": 41.35435,
+  "lng": 2.10491,
+  "h3_index": "8839446115fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7vF",
+  "name": "Hyatt Regency Barcelona Tower",
+  "lat": 41.34567,
+  "lng": 2.10696,
+  "h3_index": "883944613bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkFe1",
+  "name": "Carpa Cirque du Soleil Barcelona",
+  "lat": 41.34926,
+  "lng": 2.10214,
+  "h3_index": "8839446139fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7d7",
+  "name": "Sala Plataforma",
+  "lat": 41.37276,
+  "lng": 2.08576,
+  "h3_index": "8839446155fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7de",
+  "name": "SLPLATABCN",
+  "lat": 41.37276,
+  "lng": 2.08576,
+  "h3_index": "8839446155fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7A1e",
+  "name": "Parc de Can Zam",
+  "lat": 41.45632,
+  "lng": 2.19423,
+  "h3_index": "883944628bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF16F",
+  "name": "Sarau 08911",
+  "lat": 41.45935,
+  "lng": 2.17962,
+  "h3_index": "8839446289fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA161",
+  "name": "Playa de Badalona",
+  "lat": 41.44259,
+  "lng": 2.2456,
+  "h3_index": "883944670dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAveF",
+  "name": "Auditori de Cornellà",
+  "lat": 41.35623,
+  "lng": 2.07519,
+  "h3_index": "883944610dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAv6e",
+  "name": "RCDE Stadium Espanyol",
+  "lat": 41.34797,
+  "lng": 2.07477,
+  "h3_index": "8839446105fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7ak",
+  "name": "Estadi Municipal de Badalona",
+  "lat": 41.45531,
+  "lng": 2.23715,
+  "h3_index": "8839446745fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdk6k",
+  "name": "Sala Davidoff Prueba",
+  "lat": 41.47018,
+  "lng": 2.20667,
+  "h3_index": "88394462d3fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkF7",
+  "name": "Pista Coberta Riera Salut",
+  "lat": 41.38799,
+  "lng": 2.04766,
+  "h3_index": "8839446321fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkA1",
+  "name": "El Pande Bar-Cafetería",
+  "lat": 41.3809,
+  "lng": 2.04748,
+  "h3_index": "8839446325fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF66k",
+  "name": "Teatre El Centre",
+  "lat": 41.38109,
+  "lng": 2.04657,
+  "h3_index": "8839446325fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkeFe",
+  "name": "Teatre-Auditori Sant Cugat",
+  "lat": 41.46966,
+  "lng": 2.08929,
+  "h3_index": "8839446245fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6e1k",
+  "name": "La Masía de Sant Boi de Llob.",
+  "lat": 41.34783,
+  "lng": 2.03944,
+  "h3_index": "88394478b3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZke7e",
+  "name": "Carpa Eventos C. Sánchez - Casal",
+  "lat": 41.31575,
+  "lng": 2.06272,
+  "h3_index": "8839446a11fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe7k1",
+  "name": "Sala ACME",
+  "lat": 41.49003,
+  "lng": 2.129,
+  "h3_index": "8839447565fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAvA1",
+  "name": "Sala Polivalent Pau Casals",
+  "lat": 41.46892,
+  "lng": 2.27306,
+  "h3_index": "883944675bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6v7k",
+  "name": "Colonia Güell",
+  "lat": 41.36275,
+  "lng": 2.02524,
+  "h3_index": "8839447883fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFF61",
+  "name": "Be Disco",
+  "lat": 41.40369,
+  "lng": 2.02242,
+  "h3_index": "883944636dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdFAk",
+  "name": "El Nuevo Costa Sur",
+  "lat": 41.50082,
+  "lng": 2.13543,
+  "h3_index": "8839447561fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZde6k",
+  "name": "Sala Albeniz",
+  "lat": 41.48206,
+  "lng": 2.26605,
+  "h3_index": "883944666dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdvak",
+  "name": "Sala Dresden",
+  "lat": 41.50144,
+  "lng": 2.13378,
+  "h3_index": "8839447561fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFkve",
+  "name": "Diverbosc",
+  "lat": 41.50206,
+  "lng": 2.13092,
+  "h3_index": "8839447561fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ61ak",
+  "name": "Casino de Tiana",
+  "lat": 41.48625,
+  "lng": 2.26756,
+  "h3_index": "883944666dfffff"
+ }
+]

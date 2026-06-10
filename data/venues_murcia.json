@@ -1,0 +1,184 @@
+[
+ {
+  "tm_id": "Z198xZ2qZdAF",
+  "name": "Auditorio Parque Fofo",
+  "lat": 37.99465,
+  "lng": -1.13434,
+  "h3_index": "883825b245fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZkkF",
+  "name": "Plaza de Toros de Murcia",
+  "lat": 37.98482,
+  "lng": -1.12284,
+  "h3_index": "883825b20dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6kF1",
+  "name": "Mamba",
+  "lat": 37.99402,
+  "lng": -1.11687,
+  "h3_index": "883825b209fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZA1e",
+  "name": "Sala Garaje Beat Club",
+  "lat": 38.00211,
+  "lng": -1.14521,
+  "h3_index": "883825b24dfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZad77",
+  "name": "Recinto de Camiones Fuentes",
+  "lat": 38.03126,
+  "lng": -1.24164,
+  "h3_index": "883956495bfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZedee",
+  "name": "Sala Rem",
+  "lat": 37.99128,
+  "lng": -1.12846,
+  "h3_index": "883825b247fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAd7F",
+  "name": "Discoteca Nocturno",
+  "lat": 37.99369,
+  "lng": -1.11775,
+  "h3_index": "883825b209fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZead7",
+  "name": "Auditorio Murcia Parque",
+  "lat": 37.98207,
+  "lng": -1.1354,
+  "h3_index": "883825b263fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkee7",
+  "name": "Sala Musik",
+  "lat": 37.98207,
+  "lng": -1.12601,
+  "h3_index": "883825b205fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ76Ak",
+  "name": "Sala Teatre",
+  "lat": 37.99391,
+  "lng": -1.11597,
+  "h3_index": "883825b209fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFv1",
+  "name": "Discoteca Mana Murcia",
+  "lat": 37.99418,
+  "lng": -1.11443,
+  "h3_index": "883825b209fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFvF",
+  "name": "Klöe Discoteca",
+  "lat": 37.99418,
+  "lng": -1.11443,
+  "h3_index": "883825b209fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA6v1",
+  "name": "Av. San Juan de la Cruz",
+  "lat": 37.98017,
+  "lng": -1.12275,
+  "h3_index": "883825b205fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ1F1",
+  "name": "Cuartel de Artillería",
+  "lat": 37.97853,
+  "lng": -1.13466,
+  "h3_index": "883825b263fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdkd1",
+  "name": "Sala 12 y Medio",
+  "lat": 38.0005,
+  "lng": -1.14517,
+  "h3_index": "8839564993fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAke7",
+  "name": "Sala Spectrum",
+  "lat": 38.00055,
+  "lng": -1.14521,
+  "h3_index": "8839564993fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ77eF",
+  "name": "Palacio de los Deportes",
+  "lat": 37.99406,
+  "lng": -1.11289,
+  "h3_index": "883825b20bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZedF",
+  "name": "Sala Garaje",
+  "lat": 38.00121,
+  "lng": -1.14694,
+  "h3_index": "8839564993fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZed7e",
+  "name": "Recinto Ferial La Fica",
+  "lat": 37.9847,
+  "lng": -1.11297,
+  "h3_index": "883825b201fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkAk7",
+  "name": "Recinto Ferial La Fica",
+  "lat": 37.9847,
+  "lng": -1.11297,
+  "h3_index": "883825b201fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZ67F",
+  "name": "Sala Gamma",
+  "lat": 38.00718,
+  "lng": -1.10684,
+  "h3_index": "883825b251fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA1e1",
+  "name": "Terra Natura-Aqua Natura Murcia",
+  "lat": 38.01193,
+  "lng": -1.16512,
+  "h3_index": "88395649d3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6vkk",
+  "name": "Estadio Enrique Roca Fernández",
+  "lat": 38.0422,
+  "lng": -1.14468,
+  "h3_index": "8839564881fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdaeF",
+  "name": "Estadio Nueva Condomina",
+  "lat": 38.04219,
+  "lng": -1.14487,
+  "h3_index": "8839564881fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZev6k",
+  "name": "Recinto Mercado",
+  "lat": 38.01816,
+  "lng": -1.05056,
+  "h3_index": "8839564d31fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAFee",
+  "name": "Polideportivo El Romeral",
+  "lat": 38.06278,
+  "lng": -1.2137,
+  "h3_index": "8839564809fffff"
+ }
+]

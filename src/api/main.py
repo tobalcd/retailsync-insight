@@ -50,7 +50,7 @@ def create_insight(req: InsightRequest) -> InsightResponse:
 
     TODO (siguientes turnos):
       1. Mirar la cache (hash del input) en SQLite local + Supabase insights_cache.
-      2. Detector de audiencia oculta  -> src/engine/hidden_audience.py
+      2. Detector de audiencia oculta  -> src/patterns/hidden_audience.py
       3. Motor narrativo (Claude API)  -> src/engine/narrative.py
       4. Guardar en cache y devolver.
     """

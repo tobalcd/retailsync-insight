@@ -1,0 +1,191 @@
+[
+ {
+  "tm_id": "Z598xZ2qZF1FF",
+  "name": "El Muelle Live",
+  "lat": 38.33938,
+  "lng": -0.47868,
+  "h3_index": "8839562b4bfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZk61",
+  "name": "Plaza de Toros",
+  "lat": 38.35258,
+  "lng": -0.48455,
+  "h3_index": "88395639bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6keF",
+  "name": "Área 12",
+  "lat": 38.37665,
+  "lng": -0.50739,
+  "h3_index": "88395639c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdv11",
+  "name": "Sala The One",
+  "lat": 38.38985,
+  "lng": -0.5117,
+  "h3_index": "88395639c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZFedk",
+  "name": "Bajo la Gran Carpa",
+  "lat": 38.3764,
+  "lng": -0.41286,
+  "h3_index": "8839562a51fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF1k1",
+  "name": "Marmarela",
+  "lat": 38.33674,
+  "lng": -0.56115,
+  "h3_index": "88395676c1fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7adF",
+  "name": "Sala Stereo",
+  "lat": 38.34906,
+  "lng": -0.48713,
+  "h3_index": "88395639bdfffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZA11",
+  "name": "Teatro del Mediterráneo",
+  "lat": 38.34122,
+  "lng": -0.48744,
+  "h3_index": "88395639b5fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZak1",
+  "name": "Plaza de Toros",
+  "lat": 38.35208,
+  "lng": -0.48487,
+  "h3_index": "88395639bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeF6e",
+  "name": "Ágora del CC Panoramis",
+  "lat": 38.33747,
+  "lng": -0.4903,
+  "h3_index": "8839562b49fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZe6ke",
+  "name": "Auditorio de la Diputación",
+  "lat": 38.35518,
+  "lng": -0.48669,
+  "h3_index": "88395639bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ67v7",
+  "name": "ADDA-Aud.Diputación de Alicante",
+  "lat": 38.3545,
+  "lng": -0.48837,
+  "h3_index": "88395639bdfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZeekF",
+  "name": "Puerto de Alicante Zona Volvo",
+  "lat": 38.33585,
+  "lng": -0.49134,
+  "h3_index": "8839562b49fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ7dFk",
+  "name": "Centro de Tecnificación Alicante",
+  "lat": 38.35437,
+  "lng": -0.49479,
+  "h3_index": "88395639abfffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZA11k",
+  "name": "Parking Estadio José Rico Pérez",
+  "lat": 38.35736,
+  "lng": -0.49271,
+  "h3_index": "8839563987fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6aa7",
+  "name": "Sala Marearock",
+  "lat": 38.33533,
+  "lng": -0.51422,
+  "h3_index": "8839567699fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZkdA1",
+  "name": "Sala Babel Live Stage",
+  "lat": 38.3353,
+  "lng": -0.51443,
+  "h3_index": "8839567699fffff"
+ },
+ {
+  "tm_id": "Z198xZ2qZAdF",
+  "name": "Sala Hall Live Club",
+  "lat": 38.369,
+  "lng": -0.44724,
+  "h3_index": "8839562a45fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dae",
+  "name": "Multiespacio Rabasa",
+  "lat": 38.37693,
+  "lng": -0.5074,
+  "h3_index": "88395639c7fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAdek",
+  "name": "Mauro & Sensai",
+  "lat": 38.36605,
+  "lng": -0.43309,
+  "h3_index": "8839562a09fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZAea7",
+  "name": "Restaurante Petímetre",
+  "lat": 38.37616,
+  "lng": -0.42481,
+  "h3_index": "8839562a55fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdd17",
+  "name": "Laseda Gastro Village",
+  "lat": 38.37665,
+  "lng": -0.42203,
+  "h3_index": "8839562a55fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZ6dF7",
+  "name": "G. Carpa Cirque du Soleil Alic.",
+  "lat": 38.37606,
+  "lng": -0.4131,
+  "h3_index": "8839562a57fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZk7e1",
+  "name": "VB Spaces",
+  "lat": 38.30121,
+  "lng": -0.53663,
+  "h3_index": "88395676a3fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZevF7",
+  "name": "Parque El Canyar les Portelles",
+  "lat": 38.41667,
+  "lng": -0.44165,
+  "h3_index": "8839563883fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZF7d1",
+  "name": "Casa de la Cultura de Mutxamel",
+  "lat": 38.41776,
+  "lng": -0.52392,
+  "h3_index": "8839563805fffff"
+ },
+ {
+  "tm_id": "Z598xZ2qZdvkF",
+  "name": "Institución Ferial Alicantina",
+  "lat": 38.29045,
+  "lng": -0.59905,
+  "h3_index": "8839567447fffff"
+ }
+]
