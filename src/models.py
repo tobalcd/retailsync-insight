@@ -23,6 +23,11 @@ class Hex(BaseModel):
 
     # Movilidad / paso
     flujo_peatonal: float = 0.0
+    # Proporción del flujo bruto que es relevante para el sector (0..1):
+    # flujo ponderado por sector ÷ flujo neutro. Mide QUIÉN pasa, no cuántos —
+    # es la pieza anti "sesgo de centro" (el centro tiene volumen para todos
+    # los sectores, pero composición solo para algunos).
+    flujo_share: float = 0.0
 
     # Conteo de POIs por categoría dentro del hex, p.ej. {"oficinas": 12, "transporte": 3}
     poi_counts: dict[str, int] = Field(default_factory=dict)

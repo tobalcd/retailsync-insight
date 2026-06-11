@@ -67,10 +67,15 @@ RESIDENT_WEIGHTS = {
 }
 
 # Pesos del score VISITANTE. Suman 1.0.
+# El antiguo 50% de flujo se reparte entre VOLUMEN (cuánta gente pasa) y
+# COMPOSICIÓN (qué proporción de ese flujo es target del sector). La
+# composición es el correctivo del sesgo de centro detectado en la validación
+# Nivel 1: el centro tiene volumen para todos los sectores, composición no.
 VISITOR_WEIGHTS = {
-    "flujo": 0.5,  # flujo peatonal (movilidad MITMA)
-    "poi": 0.3,    # densidad de POIs de paso
-    "perfil": 0.2,  # afinidad sectorial del perfil visitante
+    "flujo": 0.25,   # volumen de flujo peatonal (movilidad MITMA)
+    "share": 0.25,   # composición sectorial del flujo (ponderado ÷ neutro)
+    "poi": 0.3,      # densidad de POIs de paso
+    "perfil": 0.2,   # afinidad sectorial del perfil visitante
 }
 
 # Categorías de POI que cuentan como "de paso" (público visitante, no residente).

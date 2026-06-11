@@ -33,6 +33,8 @@ class CityStats:
     poblacion_max: float
     flujo_min: float
     flujo_max: float
+    share_min: float
+    share_max: float
     poi_visit_min: float
     poi_visit_max: float
 
@@ -41,11 +43,13 @@ class CityStats:
         rentas = [h.renta for h in hexes]
         pobs = [h.poblacion for h in hexes]
         flujos = [h.flujo_peatonal for h in hexes]
+        shares = [h.flujo_share for h in hexes]
         pois = [count_poi(h, VISIT_POI_CATEGORIES) for h in hexes]
         return cls(
             renta_min=min(rentas), renta_max=max(rentas),
             poblacion_min=min(pobs), poblacion_max=max(pobs),
             flujo_min=min(flujos), flujo_max=max(flujos),
+            share_min=min(shares), share_max=max(shares),
             poi_visit_min=min(pois), poi_visit_max=max(pois),
         )
 
@@ -84,14 +88,20 @@ def resident_score(hex: Hex, stats: CityStats, sector: str) -> float:
 
 
 def visitor_score(hex: Hex, stats: CityStats, sector: str) -> float:
-    """Score 0..100 basado SOLO en el perfil visitante (movilidad + POIs de paso)."""
+    """Score 0..100 basado SOLO en el perfil visitante.
+
+    Volumen (cuánta gente pasa) + composición (qué parte es target del sector)
+    + POIs de paso + afinidad del sector.
+    """
     nf = minmax_norm(hex.flujo_peatonal, stats.flujo_min, stats.flujo_max)
+    ns = minmax_norm(hex.flujo_share, stats.share_min, stats.share_max)
     npoi = minmax_norm(
         count_poi(hex, VISIT_POI_CATEGORIES), stats.poi_visit_min, stats.poi_visit_max
     )
     aff = sector_affinity(sector, "visitante")
     raw = (
         VISITOR_WEIGHTS["flujo"] * nf
+        + VISITOR_WEIGHTS["share"] * ns
         + VISITOR_WEIGHTS["poi"] * npoi
         + VISITOR_WEIGHTS["perfil"] * aff
     )

@@ -25,18 +25,18 @@ skip_no_creds = pytest.mark.skipif(
 def test_control_sintetico_gap_y_orden():
     """3 hex con números fijos para sector 'banca' (resi 0.3 / visit 0.8).
 
-    Esperado (pesos por defecto):
-      A: alto flujo+POI, baja renta/pob  -> resi 9.0,  visit 96.0, gap 87.0  (oculto)
-      B: flujo/POI medios                 -> resi 19.9, visit 69.7, gap 49.8  (oculto)
-      C: residente puro, sin paso         -> excluido (visitante bajo, gap negativo)
+    Esperado (pesos: flujo .25 + composición .25 + poi .3 + perfil .2):
+      A: alto flujo/share/POI, baja renta/pob -> resi 9.0,  visit 96.0, gap 87.0 (oculto)
+      B: flujo/share/POI medios               -> resi 19.9, visit 66.1, gap 46.2 (oculto)
+      C: residente puro, sin paso             -> excluido (visitante bajo, gap negativo)
     """
     hexes = [
         Hex(h3_index="hexA", lat=40.0, lon=-3.0, renta=20, poblacion=5, flujo_peatonal=100,
-            poi_counts={"oficinas": 10, "transporte": 10}),
+            flujo_share=0.9, poi_counts={"oficinas": 10, "transporte": 10}),
         Hex(h3_index="hexB", lat=40.1, lon=-3.1, renta=40, poblacion=8, flujo_peatonal=90,
-            poi_counts={"oficinas": 6}),
+            flujo_share=0.7, poi_counts={"oficinas": 6}),
         Hex(h3_index="hexC", lat=40.2, lon=-3.2, renta=100, poblacion=100, flujo_peatonal=5,
-            poi_counts={}),
+            flujo_share=0.1, poi_counts={}),
     ]
 
     results = detect_from_hexes(hexes, sector="banca")
@@ -51,7 +51,7 @@ def test_control_sintetico_gap_y_orden():
     assert a.resident_score == pytest.approx(9.0, abs=0.2)
     assert a.visitor_score == pytest.approx(96.0, abs=0.2)
     assert a.gap == pytest.approx(87.0, abs=0.2)
-    assert b.gap == pytest.approx(49.8, abs=0.2)
+    assert b.gap == pytest.approx(46.2, abs=0.2)
 
     # Invariantes: gap == visitante - residente, y orden descendente por gap.
     for r in results:

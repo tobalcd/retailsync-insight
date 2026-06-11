@@ -197,6 +197,11 @@ def build_hexes(ine_rows: list[dict], zones: list[dict], screens: list[dict],
     hexes: list[Hex] = []
     for cell, agg in ine_by_hex.items():
         lat, lon = h3.cell_to_latlng(cell)
+        flujo = flujo_for_hex(lat, lon, zones, sector, window)
+        # Composición: proporción del flujo BRUTO (sin sector ni ventana) que
+        # es relevante para el sector. Anti sesgo-de-centro.
+        neutro = flujo_for_hex(lat, lon, zones) if sector else flujo
+        share = (flujo / neutro) if neutro > 0 else 0.0
         hexes.append(
             Hex(
                 h3_index=cell,
@@ -204,7 +209,8 @@ def build_hexes(ine_rows: list[dict], zones: list[dict], screens: list[dict],
                 lon=lon,
                 renta=agg["renta"],
                 poblacion=agg["poblacion"],
-                flujo_peatonal=flujo_for_hex(lat, lon, zones, sector, window),
+                flujo_peatonal=flujo,
+                flujo_share=min(1.0, share),
                 poi_counts=pois.get(cell, {}),
             )
         )

@@ -62,6 +62,28 @@ una a una. (Catastro daría una base más uniforme — pendiente.)
 3. **Datos:** mantener OSM como verdad externa del agregado; evaluar Catastro
    para uniformidad. Nivel 2 (sensibilidad de pesos) sigue pendiente.
 
+## Iteración 2 (2026-06-12): fix del sesgo de centro
+
+Cambio de modelo: el peso del flujo (50%) se reparte en **volumen (25%) +
+composición (25%)**, donde composición = flujo ponderado por sector ÷ flujo
+neutro. Mide *quién* pasa, no cuántos — el centro tiene volumen para todos
+los sectores, composición no.
+
+| Métrica | Antes | Después |
+|---|---|---|
+| Control negativo (ciudades ⚠️) | 5 de 7 | **1 de 6** (solo Madrid) |
+| banca lift | 2,0× | 1,8× |
+| moda_lujo lift | 2,7× | 2,5× |
+| Madrid/banca precision@10 | 60% | **80%** (lift 2,6×) |
+| Zonas control Madrid OK | AZCA | **AZCA + Plaza Castilla** (Av. América a 1 punto) |
+
+Trade-off aceptado: −0,2 de lift agregado a cambio de diferenciación sectorial
+real. `alimentacion` detecta aún menos (11 hexes en 6 ciudades) — refuerza la
+decisión de producto: audiencia oculta solo para sectores de visitante.
+Barcelona/banca queda en lift 1,0 (sin señal): Barcelona no tiene zonas MITMA
+tipo `business` — misma curación pendiente que se hizo en Madrid (eje
+diagonal/22@), o zonificación MITMA real.
+
 ## Detalle por ciudad
 
 Ver `data/validation_level1.csv` (generado por el script). Resumen banca:
