@@ -80,9 +80,13 @@ los sectores, composición no.
 Trade-off aceptado: −0,2 de lift agregado a cambio de diferenciación sectorial
 real. `alimentacion` detecta aún menos (11 hexes en 6 ciudades) — refuerza la
 decisión de producto: audiencia oculta solo para sectores de visitante.
-Barcelona/banca queda en lift 1,0 (sin señal): Barcelona no tiene zonas MITMA
-tipo `business` — misma curación pendiente que se hizo en Madrid (eje
-diagonal/22@), o zonificación MITMA real.
+
+**Iteración 2b:** Barcelona/banca quedó en lift 1,0 porque el snapshot solo
+tipifica como business Sants/Pl. Espanya, sin los ejes Diagonal/Les Corts ni
+22@/Sant Martí. Tras curarlos (ver data_curation.md): banca 1,0→1,3, moda
+1,7→2,0, control negativo OK. El techo restante es la imprecisión de los
+centroides sintéticos del snapshot — el fix de fondo sigue siendo la
+zonificación MITMA real (roadmap).
 
 ## Detalle por ciudad
 

@@ -37,3 +37,30 @@ update mobility_zones set tipo='residencial_premium'
  where city_slug='madrid' and zona_mitma in ('2807906','2807908');
 -- (y restaurar traffic_profile residencial_premium + peak_hours 12:00-14:00/12:00-15:00)
 ```
+
+---
+
+## 2026-06-12 — `mobility_zones` Barcelona: ejes de oficinas → `business`
+
+**Qué:** dos zonas reetiquetadas de `residencial_premium` a `business`
+(tipo + traffic_profile/peak_hours copiados de la 0801906, la única business
+preexistente en Barcelona).
+
+| zona_mitma | lat, lng | avg_daily_visitors | tipo ANTES | tipo DESPUÉS |
+|---|---|---|---|---|
+| 0801904 | 41.415, 2.145 | 145.039 | residencial_premium | business |
+| 0801910 | 41.430, 2.180 | 428.841 | residencial_premium | business |
+
+**Por qué:** la validación Nivel 1 (iteración 2) dejó Barcelona/banca con
+lift 1,0 (sin señal). Causa: el snapshot MITMA solo tipifica como business la
+zona Sants/Pl. Espanya (0801906), dejando fuera los dos ejes de oficinas
+reales: **Diagonal/Les Corts** (L'Illa, sedes bancarias) y **22@/Sant Martí**
+(distrito tecnológico). Conocimiento del mundo real, mismo criterio que la
+curación de Madrid. Cautela: las coordenadas del snapshot son centroides
+aproximados de distrito; la corrección hereda esa imprecisión.
+
+**Cómo revertir:**
+```sql
+update mobility_zones set tipo='residencial_premium'
+ where city_slug='barcelona' and zona_mitma in ('0801904','0801910');
+```
