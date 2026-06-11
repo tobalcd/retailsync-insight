@@ -88,6 +88,24 @@ tipifica como business Sants/Pl. Espanya, sin los ejes Diagonal/Les Corts ni
 centroides sintéticos del snapshot — el fix de fondo sigue siendo la
 zonificación MITMA real (roadmap).
 
+## Iteración 3 (2026-06-12): umbrales por sector fijados
+
+Decisión del PO tras la rejilla de umbrales y los mapas de calibración:
+**banca 30/65, moda_lujo 30/65** (gap/visitante), resto de sectores de
+visitante 25/65 (fallback global), sectores residenciales fuera del producto
+audiencia-oculta. Implementado en `SECTOR_THRESHOLDS` (config.py).
+
+**Números finales del deck (umbrales calibrados, 10 ciudades):**
+- moda_lujo: precision@k 57% · baseline 22% · **lift 2,5×** (86 hexes)
+- banca: precision@k 49% · baseline 27% · **lift 1,8×** (85 hexes)
+- Control negativo: OK en 5/6 ciudades (residual solo Madrid)
+
+Framing comercial acordado: *"umbrales de calidad calibrados y validados
+sobre 10 ciudades"* — calibración con criterio respaldada por validación,
+NO optimización formal. El umbral fijo permite devolver pocas zonas (o
+ninguna) cuando no hay señal — honestidad comercial deliberada. Evolución
+futura anotada: umbral por percentil de ciudad cuando entren las Tier-2.
+
 ## Detalle por ciudad
 
 Ver `data/validation_level1.csv` (generado por el script). Resumen banca:

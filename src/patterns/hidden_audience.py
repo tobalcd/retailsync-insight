@@ -12,7 +12,7 @@ solo añade la carga de datos desde Supabase por encima.
 
 from __future__ import annotations
 
-from src.config import settings
+from src.config import settings, thresholds_for
 from src.models import Hex, HiddenAudienceResult
 from src.patterns.scoring import CityStats, resident_score, visitor_score
 
@@ -35,6 +35,7 @@ def detect_from_hexes(hexes: list[Hex], sector: str) -> list[HiddenAudienceResul
         return []
 
     stats = CityStats.from_hexes(hexes)
+    gap_thr, visitor_min = thresholds_for(sector)
     results: list[HiddenAudienceResult] = []
 
     for hex in hexes:
@@ -46,9 +47,9 @@ def detect_from_hexes(hexes: list[Hex], sector: str) -> list[HiddenAudienceResul
         vs = visitor_score(hex, stats, sector)
         gap = round(vs - rs, 1)
 
-        if gap < settings.hidden_audience_gap_threshold:
+        if gap < gap_thr:
             continue
-        if vs < settings.hidden_audience_visitor_min:
+        if vs < visitor_min:
             continue
 
         results.append(

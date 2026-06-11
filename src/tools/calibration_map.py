@@ -23,7 +23,7 @@ from pathlib import Path
 
 import h3
 
-from src.config import settings
+from src.config import thresholds_for
 from src.patterns.aggregation import (
     cell_of,
     load_city_hexes,
@@ -297,8 +297,8 @@ def build_map(city: str, sector: str, window: str | None) -> Path:
         TEMPLATE
         .replace("__TITLE__", f"{city} · {sector}")
         .replace("__SUBTITLE__", f"ventana: {window or 'todas'} · {len(rows)} hexes (res 9)")
-        .replace("__GAP_THR__", str(int(settings.hidden_audience_gap_threshold)))
-        .replace("__VIS_THR__", str(int(settings.hidden_audience_visitor_min)))
+        .replace("__GAP_THR__", str(int(thresholds_for(sector)[0])))
+        .replace("__VIS_THR__", str(int(thresholds_for(sector)[1])))
         .replace("__HEXES__", json.dumps(rows, ensure_ascii=False))
         .replace("__CONTROLS__", json.dumps(CONTROLS.get(city, []), ensure_ascii=False))
         .replace("__CLAT__", f"{clat:.5f}")

@@ -31,11 +31,11 @@ class Settings(BaseSettings):
     # --- Cache local ---
     local_cache_path: str = "data/insight_cache.db"
 
-    # --- Detector de audiencia oculta (umbrales, sobreescribibles por entorno) ---
-    # Un hex se marca "audiencia oculta" si el diferencial visitante-residente
-    # supera este umbral...
+    # --- Detector de audiencia oculta (umbrales GLOBALES por defecto) ---
+    # Suelo de calidad (el producto entrega como mucho el top 10). Un hex se
+    # marca si gap >= umbral Y visitante >= mínimo. Los sectores validados
+    # tienen umbral propio en SECTOR_THRESHOLDS (abajo); esto es el fallback.
     hidden_audience_gap_threshold: float = 25.0
-    # ...y además el score de visitante es alto (no queremos zonas mediocres).
     hidden_audience_visitor_min: float = 65.0
 
     model_config = SettingsConfigDict(
@@ -164,6 +164,23 @@ ZONE_TYPE_AFFINITY = {
     },
 }
 DEFAULT_ZONE_TYPE_AFFINITY = 0.5  # sector o tipo desconocido → neutro
+
+# Umbrales (gap, visitante) por sector — calibrados el 2026-06-12 con los mapas
+# de calibración y validados contra presencia comercial real (Nivel 1, lift
+# 1,8–2,5×). Sectores sin entrada usan el fallback global de Settings.
+# "Calibrados y validados", no "óptimos": no hay optimización formal detrás.
+SECTOR_THRESHOLDS = {
+    "banca": (30.0, 65.0),
+    "moda_lujo": (30.0, 65.0),
+}
+
+
+def thresholds_for(sector: str) -> tuple[float, float]:
+    """(umbral_gap, visitante_min) del sector, con fallback al global."""
+    return SECTOR_THRESHOLDS.get(
+        sector,
+        (settings.hidden_audience_gap_threshold, settings.hidden_audience_visitor_min),
+    )
 
 # ─────────────────────────────────────────────────────────────────────
 # Ventanas temporales (parámetro `window` del API)
