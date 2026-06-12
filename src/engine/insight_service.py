@@ -11,7 +11,7 @@ import unicodedata
 from pathlib import Path
 
 from src.cache.store import get_cached, input_hash, set_cached
-from src.config import SECTOR_AFFINITY, thresholds_for
+from src.config import SECTOR_AFFINITY, SECTOR_DEFAULT_WINDOW, thresholds_for
 from src.engine.narrative import build_prompt, generate_narrative
 from src.patterns.aggregation import load_city_hexes
 from src.patterns.hidden_audience import detect_from_hexes
@@ -73,6 +73,10 @@ def _find_discarded(hexes, stats, sector, top_cells, zonas) -> dict | None:
 
 def run_insight(city: str, sector: str, profile: str, window: str | None) -> dict:
     """Análisis completo (con cache). Devuelve el payload del API."""
+    # Sin ventana explícita → la natural del sector (banca=mañana laborable…).
+    # Se resuelve ANTES del hash para que la cache distinga lo que de verdad corre.
+    if window is None:
+        window = SECTOR_DEFAULT_WINDOW.get(sector)
     key = input_hash(city, sector, profile, window)
     cached = get_cached(key)
     if cached is not None:
@@ -81,7 +85,7 @@ def run_insight(city: str, sector: str, profile: str, window: str | None) -> dic
     hexes = load_city_hexes(city, sector, window)
     if not hexes:
         raise ValueError(f"Sin datos para la ciudad '{city}' — ¿slug correcto?")
-    stats = CityStats.from_hexes(hexes)
+    stats = CityStats.from_hexes(hexes, sector)
     results = detect_from_hexes(hexes, sector)
 
     zonas = _fetch_districts(city)

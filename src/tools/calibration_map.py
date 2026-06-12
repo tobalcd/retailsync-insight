@@ -271,7 +271,7 @@ def build_map(city: str, sector: str, window: str | None) -> Path:
     hexes = load_city_hexes(city, sector, window)
     if not hexes:
         raise RuntimeError(f"Sin hexes para '{city}' — ¿slug correcto?")
-    stats = CityStats.from_hexes(hexes)
+    stats = CityStats.from_hexes(hexes, sector)
     districts = _fetch_districts(city)
     poi_names = _poi_names_by_cell(city)
 

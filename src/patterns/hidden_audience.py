@@ -34,7 +34,7 @@ def detect_from_hexes(hexes: list[Hex], sector: str) -> list[HiddenAudienceResul
     if not hexes:
         return []
 
-    stats = CityStats.from_hexes(hexes)
+    stats = CityStats.from_hexes(hexes, sector)
     gap_thr, visitor_min = thresholds_for(sector)
     results: list[HiddenAudienceResult] = []
 

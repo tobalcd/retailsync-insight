@@ -27,7 +27,7 @@ def test_control_sintetico_gap_y_orden():
 
     Esperado (pesos: flujo .25 + composición .25 + poi .3 + perfil .2):
       A: alto flujo/share/POI, baja renta/pob -> resi 9.0,  visit 96.0, gap 87.0 (oculto)
-      B: flujo/share/POI medios               -> resi 19.9, visit 66.1, gap 46.2 (oculto)
+      B: flujo/share/POI medios               -> resi 19.9, visit 67.1, gap 47.2 (oculto)
       C: residente puro, sin paso             -> excluido (visitante bajo, gap negativo)
     """
     hexes = [
@@ -51,7 +51,7 @@ def test_control_sintetico_gap_y_orden():
     assert a.resident_score == pytest.approx(9.0, abs=0.2)
     assert a.visitor_score == pytest.approx(96.0, abs=0.2)
     assert a.gap == pytest.approx(87.0, abs=0.2)
-    assert b.gap == pytest.approx(46.2, abs=0.2)
+    assert b.gap == pytest.approx(47.2, abs=0.2)
 
     # Invariantes: gap == visitante - residente, y orden descendente por gap.
     for r in results:

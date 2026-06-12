@@ -150,17 +150,20 @@ ZONE_TYPE_AFFINITY = {
         "residencial_premium": 0.9, "periferia": 0.8, "comercial_premium": 0.5,
         "business": 0.35, "comercial_turistico": 0.3, "ocio_nocturno": 0.2,
     },
+    # Sectores "gemelos" separados con más contraste (2026-06-12: compartían
+    # casi el mismo top-10 en Madrid). restauración pivota a ocio nocturno y
+    # comida de oficina; viajes a turístico puro; tecnología a business.
     "restauracion": {
-        "comercial_turistico": 0.9, "ocio_nocturno": 0.85, "comercial_premium": 0.7,
-        "business": 0.6, "residencial_premium": 0.5, "periferia": 0.3,
+        "ocio_nocturno": 1.0, "comercial_turistico": 0.8, "business": 0.6,
+        "comercial_premium": 0.5, "residencial_premium": 0.45, "periferia": 0.3,
     },
     "tecnologia": {
-        "business": 0.7, "comercial_premium": 0.6, "comercial_turistico": 0.5,
-        "residencial_premium": 0.5, "ocio_nocturno": 0.4, "periferia": 0.4,
+        "business": 0.9, "comercial_premium": 0.5, "residencial_premium": 0.4,
+        "comercial_turistico": 0.3, "ocio_nocturno": 0.3, "periferia": 0.4,
     },
     "viajes_turismo": {
-        "comercial_turistico": 1.0, "ocio_nocturno": 0.7, "comercial_premium": 0.6,
-        "business": 0.4, "residencial_premium": 0.3, "periferia": 0.15,
+        "comercial_turistico": 1.0, "ocio_nocturno": 0.5, "comercial_premium": 0.4,
+        "business": 0.3, "residencial_premium": 0.3, "periferia": 0.15,
     },
     "deportes_fitness": {
         "residencial_premium": 0.8, "periferia": 0.7, "comercial_premium": 0.45,
@@ -172,6 +175,31 @@ ZONE_TYPE_AFFINITY = {
     },
 }
 DEFAULT_ZONE_TYPE_AFFINITY = 0.5  # sector o tipo desconocido → neutro
+
+# ─────────────────────────────────────────────────────────────────────
+# Pesos de las categorías de POI por sector. Antes los POIs contaban igual
+# para todos los sectores (turismo+transporte+oficinas a secas) — el 30% del
+# score era ciego al sector y empujaba a todos al mismo top.
+# ─────────────────────────────────────────────────────────────────────
+SECTOR_POI_WEIGHTS = {
+    "banca": {"oficinas": 1.0, "transporte": 0.8, "turismo": 0.2},
+    "moda_lujo": {"turismo": 1.0, "transporte": 0.5, "oficinas": 0.3},
+    "restauracion": {"turismo": 0.8, "transporte": 0.6, "oficinas": 0.6},
+    "viajes_turismo": {"turismo": 1.0, "transporte": 0.7, "oficinas": 0.2},
+    "tecnologia": {"oficinas": 0.9, "transporte": 0.7, "turismo": 0.3},
+}
+# Sector sin entrada → comportamiento anterior (todas las categorías a 1).
+DEFAULT_POI_WEIGHTS = {"turismo": 1.0, "transporte": 1.0, "oficinas": 1.0}
+
+# Ventana temporal POR DEFECTO de cada sector (si la petición no trae una):
+# el pulso horario natural de su cliente. None = todas las horas.
+SECTOR_DEFAULT_WINDOW = {
+    "banca": "laborable-manana",
+    "tecnologia": "laborable-tarde",
+    "restauracion": "noche",
+    "moda_lujo": "finde",
+    "viajes_turismo": None,
+}
 
 # Umbrales (gap, visitante) por sector — calibrados el 2026-06-12 con los mapas
 # de calibración y validados contra presencia comercial real (Nivel 1, lift

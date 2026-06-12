@@ -49,8 +49,8 @@ OSM_SELECTORS = {
     "alimentacion": '["shop"~"^(supermarket|convenience|greengrocer|bakery|butcher|seafood|deli)$"]',
 }
 
-# Ventana usada por sector en la validación (la natural de cada uno).
-SECTOR_WINDOW = {"banca": "laborable-manana", "moda_lujo": None, "alimentacion": None}
+# Ventana usada por sector en la validación: la por defecto del producto.
+from src.config import SECTOR_DEFAULT_WINDOW as SECTOR_WINDOW  # noqa: E402
 
 
 def fetch_osm_businesses(city: dict, sector: str) -> list[dict]:

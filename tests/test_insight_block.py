@@ -10,11 +10,11 @@ from src.models import HiddenAudienceResult
 # ─────────────────────────── cache ───────────────────────────
 def test_cache_roundtrip_local(tmp_path, monkeypatch):
     from src.config import settings
-    monkeypatch.setattr(settings, "local_cache_path", str(tmp_path / "cache.db"))
-    # sin credenciales remotas: la parte Supabase debe degradar en silencio
-    monkeypatch.setattr(settings, "supabase_url", "")
-
     from src.cache import store
+    monkeypatch.setattr(settings, "local_cache_path", str(tmp_path / "cache.db"))
+    # La remota NUNCA se toca desde tests (escribiría en producción).
+    monkeypatch.setattr(store, "_remote_get", lambda key: None)
+    monkeypatch.setattr(store, "_remote_set", lambda key, value: None)
     key = store.input_hash("madrid", "banca", "ejecutivo", "laborable-manana")
     assert store.get_cached(key) is None
     store.set_cached(key, {"narrative": "hola", "hidden_audience": []})
@@ -62,7 +62,9 @@ def test_generate_narrative_sin_key_falla_claro(monkeypatch):
 
 # ─────────────────────────── endpoint ───────────────────────────
 @pytest.fixture
-def client():
+def client(monkeypatch):
+    from src.config import settings
+    monkeypatch.setattr(settings, "insight_api_key", "")  # sin auth por defecto
     from fastapi.testclient import TestClient
     from src.api.main import app
     return TestClient(app)
