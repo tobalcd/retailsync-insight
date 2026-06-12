@@ -31,6 +31,14 @@ class Settings(BaseSettings):
     # --- Cache local ---
     local_cache_path: str = "data/insight_cache.db"
 
+    # --- API HTTP (despliegue) ---
+    # API key exigida en la cabecera X-API-Key de /insight. VACÍA = sin auth
+    # (solo para desarrollo local; en producción SIEMPRE definida).
+    insight_api_key: str = ""
+    # Orígenes permitidos para CORS, separados por comas. "*" = cualquiera
+    # (dev). En producción: el dominio del frontend Lovable.
+    allowed_origins: str = "*"
+
     # --- Detector de audiencia oculta (umbrales GLOBALES por defecto) ---
     # Suelo de calidad (el producto entrega como mucho el top 10). Un hex se
     # marca si gap >= umbral Y visitante >= mínimo. Los sectores validados

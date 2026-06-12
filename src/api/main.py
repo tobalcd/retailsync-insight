@@ -10,14 +10,40 @@ Docs interactivas: http://127.0.0.1:8000/docs
 
 from __future__ import annotations
 
+import hmac
 from typing import Optional
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Security
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import APIKeyHeader
 from pydantic import BaseModel, Field
 
-from src.config import WINDOWS
+from src.config import WINDOWS, settings
 
-app = FastAPI(title="Motor INSIGHT — RetailSync", version="0.2.0")
+app = FastAPI(title="Motor INSIGHT — RetailSync", version="0.3.0")
+
+# CORS: imprescindible para que el frontend (Lovable) pueda llamar desde el
+# navegador. Orígenes configurables por entorno (ALLOWED_ORIGINS).
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[o.strip() for o in settings.allowed_origins.split(",")],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type", "X-API-Key"],
+)
+
+_api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
+
+
+def require_api_key(provided: Optional[str] = Security(_api_key_header)) -> None:
+    """Si INSIGHT_API_KEY está definida, exige la cabecera X-API-Key.
+
+    Vacía = sin auth (solo desarrollo local). Comparación en tiempo constante.
+    """
+    expected = settings.insight_api_key
+    if not expected:
+        return
+    if not provided or not hmac.compare_digest(provided, expected):
+        raise HTTPException(401, "API key ausente o inválida (cabecera X-API-Key).")
 
 
 # ──────────────── Contratos (esquema de entrada/salida) ────────────────
@@ -55,7 +81,8 @@ def health() -> dict[str, str]:
     return {"status": "ok"}
 
 
-@app.post("/insight", response_model=InsightResponse)
+@app.post("/insight", response_model=InsightResponse,
+          dependencies=[Security(require_api_key)])
 def create_insight(req: InsightRequest) -> InsightResponse:
     """Análisis INSIGHT completo para (ciudad, sector, perfil, ventana)."""
     # Import perezoso: que el arranque del API no exija supabase/anthropic.

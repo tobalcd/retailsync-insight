@@ -85,6 +85,28 @@ def test_insight_rechaza_ventana_invalida(client):
     assert r.status_code == 422
 
 
+def test_api_key_exigida_cuando_configurada(client, monkeypatch):
+    from src.config import settings
+    monkeypatch.setattr(settings, "insight_api_key", "secreta-123")
+    body = {"city": "madrid", "sector": "banca", "profile": "x", "window": None}
+
+    assert client.post("/insight", json=body).status_code == 401  # sin cabecera
+    assert client.post("/insight", json=body,
+                       headers={"X-API-Key": "mala"}).status_code == 401
+
+    import src.engine.insight_service as svc
+    monkeypatch.setattr(svc, "run_insight", lambda *a: {
+        "hidden_audience": [], "next_wave": [], "narrative": "ok", "cached": False})
+    r = client.post("/insight", json=body, headers={"X-API-Key": "secreta-123"})
+    assert r.status_code == 200
+
+
+def test_health_abierto_incluso_con_api_key(client, monkeypatch):
+    from src.config import settings
+    monkeypatch.setattr(settings, "insight_api_key", "secreta-123")
+    assert client.get("/health").status_code == 200
+
+
 def test_insight_happy_path_con_mocks(client, monkeypatch):
     import src.engine.insight_service as svc
 
