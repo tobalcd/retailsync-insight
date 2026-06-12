@@ -3,12 +3,13 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
-# Instala dependencias primero (mejor cacheo de capas)
+# El pyproject declara packages=["src"], así que src/ debe existir al instalar.
 COPY pyproject.toml ./
+COPY src ./src
 RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir .
 
-# Código
-COPY src ./src
+# Datos locales que el motor lee en runtime (venues TM, paradas GTFS, clima)
+COPY data ./data
 
 # Railway/Fly inyectan $PORT; por defecto 8000 en local
 ENV PORT=8000
