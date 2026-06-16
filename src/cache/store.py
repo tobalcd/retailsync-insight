@@ -21,7 +21,7 @@ from pathlib import Path
 from src.config import settings
 
 # Súbela cuando cambie el modelo de scoring o el formato de respuesta.
-CACHE_VERSION = "2026-06-12.3"
+CACHE_VERSION = "2026-06-12.4"
 
 REMOTE_TABLE = "insights_cache"
 

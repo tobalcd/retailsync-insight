@@ -110,8 +110,9 @@ def run_insight(city: str, sector: str, profile: str, window: str | None) -> dic
     discarded = _find_discarded(hexes, stats, sector, top_cells, zonas)
     clima = _load_clima(city)
 
+    primary = "next_wave" if next_wave_applies(sector) else "hidden_audience"
     prompt = build_prompt(city, sector, profile, window, results, zonas, pois,
-                          discarded, clima, next_wave)
+                          discarded, clima, next_wave, primary)
     narrative = generate_narrative(prompt)
 
     def _serialize(r):

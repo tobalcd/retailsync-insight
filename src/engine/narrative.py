@@ -38,9 +38,11 @@ ZONA DESCARTADA:
 CONTEXTO ADICIONAL:
 {context_block}
 
+La señal PRINCIPAL de este sector es: {primary_label}.
+
 Escribe ~200 palabras (un único texto corrido, 2-3 párrafos, sin títulos ni listas):
-1. Lidera con la señal MÁS FUERTE: si hay audiencia oculta, explica por qué funcionan sus 3 primeras zonas; si está vacía (sector residencial), lidera con la próxima ola y por qué esas zonas son la oportunidad (cliente que reside + sin saturación comercial todavía).
-2. Menciona la otra señal en una o dos frases si aporta.
+1. LIDERA con la señal principal y sus 3 primeras zonas: explica por qué son la oportunidad para este sector y perfil (audiencia oculta = tu cliente pasa aunque no viva ahí; próxima ola = tu cliente vive ahí y la zona aún no está saturada).
+2. Menciona la otra señal en una o dos frases solo si aporta.
 3. La zona descartada y su razón, en una frase.
 4. Cierra con contexto comercial del sector y, si hay dato de clima, un apunte de timing de campaña.
 Usa los nombres reales de zona/transporte dados. Usa SOLO la información proporcionada. No inventes calles, datos ni porcentajes."""
@@ -63,8 +65,18 @@ def build_prompt(
     discarded: dict | None = None,
     clima: dict | None = None,
     next_wave: list[HiddenAudienceResult] | None = None,
+    primary: str = "hidden_audience",
 ) -> str:
-    """Arma el prompt con datos reales. Puro: sin red, testeable."""
+    """Arma el prompt con datos reales. Puro: sin red, testeable.
+
+    `primary`: qué señal lidera la narrativa ('hidden_audience' | 'next_wave'),
+    según el tipo de sector — no según cuál array venga lleno.
+    """
+    primary_label = (
+        "PRÓXIMA OLA / next_wave (zonas residenciales sin saturar)"
+        if primary == "next_wave"
+        else "AUDIENCIA OCULTA (zonas de paso de tu cliente)"
+    )
     top_block = "\n".join(
         _fmt_result(i + 1, r, zonas.get(r.h3_index, city.title()), pois.get(r.h3_index, []))
         for i, r in enumerate(results[:3])
@@ -99,6 +111,7 @@ def build_prompt(
         window=window or "todas las horas",
         top_block=top_block, next_wave_block=next_wave_block,
         discarded_block=discarded_block, context_block=context_block,
+        primary_label=primary_label,
     )
 
 
