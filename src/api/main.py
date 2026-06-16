@@ -86,15 +86,15 @@ def health() -> dict[str, str]:
 def create_insight(req: InsightRequest) -> InsightResponse:
     """Análisis INSIGHT completo para (ciudad, sector, perfil, ventana)."""
     # Import perezoso: que el arranque del API no exija supabase/anthropic.
-    from src.engine.insight_service import run_insight, sector_supported
+    from src.config import SECTOR_AFFINITY
+    from src.engine.insight_service import run_insight, sector_known
 
     if req.window is not None and req.window not in WINDOWS:
         raise HTTPException(422, f"Ventana desconocida: '{req.window}'. Usa {sorted(WINDOWS)} o null.")
-    if not sector_supported(req.sector):
+    if not sector_known(req.sector):
         raise HTTPException(
             422,
-            f"El sector '{req.sector}' es de perfil residencial: el detector de "
-            "audiencia oculta no aplica (su insight será 'next_wave', en desarrollo).",
+            f"Sector desconocido: '{req.sector}'. Disponibles: {sorted(SECTOR_AFFINITY)}.",
         )
     try:
         return InsightResponse(**run_insight(req.city, req.sector, req.profile, req.window))

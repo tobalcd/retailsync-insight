@@ -74,11 +74,21 @@ def test_health(client):
     assert client.get("/health").json() == {"status": "ok"}
 
 
-def test_insight_rechaza_sector_residencial(client):
+def test_insight_rechaza_sector_desconocido(client):
+    r = client.post("/insight", json={"city": "madrid", "sector": "criptomonedas",
+                                      "profile": "x", "window": None})
+    assert r.status_code == 422
+    assert "desconocido" in r.json()["detail"].lower()
+
+
+def test_insight_acepta_sector_residencial(client, monkeypatch):
+    # alimentación ya NO se rechaza: pasa la puerta y se sirve (run_insight mockeado).
+    import src.engine.insight_service as svc
+    monkeypatch.setattr(svc, "run_insight", lambda *a: {
+        "hidden_audience": [], "next_wave": [], "narrative": "ok", "cached": False})
     r = client.post("/insight", json={"city": "madrid", "sector": "alimentacion",
                                       "profile": "familias", "window": None})
-    assert r.status_code == 422
-    assert "next_wave" in r.json()["detail"]
+    assert r.status_code == 200
 
 
 def test_insight_rechaza_ventana_invalida(client):

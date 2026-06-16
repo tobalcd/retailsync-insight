@@ -218,6 +218,21 @@ def thresholds_for(sector: str) -> tuple[float, float]:
         (settings.hidden_audience_gap_threshold, settings.hidden_audience_visitor_min),
     )
 
+
+# ─────────────────────────────────────────────────────────────────────
+# next_wave (cara residencial). Un hex entra si su encaje residente supera
+# al de paso comercial en al menos este margen (análogo al umbral de gap, pero
+# más bajo: el sesgo residencial es naturalmente menor que los gaps de visitante).
+# ─────────────────────────────────────────────────────────────────────
+NEXT_WAVE_SKEW_MIN = 10.0
+NEXT_WAVE_TOP_N = 10
+
+# Sectores cuyo producto PRINCIPAL es next_wave (perfil residente domina). Para
+# el resto, next_wave es secundario y suele salir ralo. Derivado de la afinidad.
+SECTOR_AFFINITY_RESIDENTIAL = {
+    s for s, a in SECTOR_AFFINITY.items() if a["residente"] >= a["visitante"]
+}
+
 # ─────────────────────────────────────────────────────────────────────
 # Ventanas temporales (parámetro `window` del API)
 # Días según las claves del traffic_profile MITMA; horas en formato 0-23.

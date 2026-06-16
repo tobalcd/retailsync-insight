@@ -26,8 +26,11 @@ PROMPT_TEMPLATE = """Análisis de audiencia oculta — {city} · sector {sector}
 
 "Audiencia oculta" = zonas donde quien VIVE no encaja con el target pero quien PASA sí (score visitante muy por encima del residente).
 
-TOP ZONAS DETECTADAS:
+AUDIENCIA OCULTA (tu cliente pasa aunque no viva aquí):
 {top_block}
+
+PRÓXIMA OLA / next_wave (tu cliente VIVE aquí y la zona aún no está saturada):
+{next_wave_block}
 
 ZONA DESCARTADA:
 {discarded_block}
@@ -36,10 +39,11 @@ CONTEXTO ADICIONAL:
 {context_block}
 
 Escribe ~200 palabras (un único texto corrido, 2-3 párrafos, sin títulos ni listas):
-1. Por qué funcionan las 3 primeras zonas para este sector y perfil (usa los nombres reales de zona/transporte dados).
-2. La zona descartada y su razón, en una frase.
-3. Cierra con contexto comercial del sector y, si hay dato de clima, un apunte de timing de campaña.
-Usa SOLO la información proporcionada. No inventes calles, datos ni porcentajes."""
+1. Lidera con la señal MÁS FUERTE: si hay audiencia oculta, explica por qué funcionan sus 3 primeras zonas; si está vacía (sector residencial), lidera con la próxima ola y por qué esas zonas son la oportunidad (cliente que reside + sin saturación comercial todavía).
+2. Menciona la otra señal en una o dos frases si aporta.
+3. La zona descartada y su razón, en una frase.
+4. Cierra con contexto comercial del sector y, si hay dato de clima, un apunte de timing de campaña.
+Usa los nombres reales de zona/transporte dados. Usa SOLO la información proporcionada. No inventes calles, datos ni porcentajes."""
 
 
 def _fmt_result(i: int, r: HiddenAudienceResult, zona: str, pois: list[str]) -> str:
@@ -58,12 +62,18 @@ def build_prompt(
     pois: dict[str, list[str]],
     discarded: dict | None = None,
     clima: dict | None = None,
+    next_wave: list[HiddenAudienceResult] | None = None,
 ) -> str:
     """Arma el prompt con datos reales. Puro: sin red, testeable."""
     top_block = "\n".join(
         _fmt_result(i + 1, r, zonas.get(r.h3_index, city.title()), pois.get(r.h3_index, []))
         for i, r in enumerate(results[:3])
     ) or "(sin zonas que superen los umbrales de calidad)"
+
+    next_wave_block = "\n".join(
+        _fmt_result(i + 1, r, zonas.get(r.h3_index, city.title()), pois.get(r.h3_index, []))
+        for i, r in enumerate((next_wave or [])[:3])
+    ) or "(sin zonas residenciales destacadas)"
 
     if discarded:
         discarded_block = (
@@ -87,8 +97,8 @@ def build_prompt(
     return PROMPT_TEMPLATE.format(
         city=city.title(), sector=sector, profile=profile,
         window=window or "todas las horas",
-        top_block=top_block, discarded_block=discarded_block,
-        context_block=context_block,
+        top_block=top_block, next_wave_block=next_wave_block,
+        discarded_block=discarded_block, context_block=context_block,
     )
 
 

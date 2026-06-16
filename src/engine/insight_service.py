@@ -11,22 +11,31 @@ import unicodedata
 from pathlib import Path
 
 from src.cache.store import get_cached, input_hash, set_cached
-from src.config import SECTOR_AFFINITY, SECTOR_DEFAULT_WINDOW, thresholds_for
+from src.config import (
+    SECTOR_AFFINITY,
+    SECTOR_AFFINITY_RESIDENTIAL,
+    SECTOR_DEFAULT_WINDOW,
+    thresholds_for,
+)
 from src.engine.narrative import build_prompt, generate_narrative
 from src.patterns.aggregation import load_city_hexes
 from src.patterns.hidden_audience import detect_from_hexes
+from src.patterns.next_wave import detect_next_wave
 from src.patterns.scoring import CityStats, resident_score, visitor_score
 from src.tools.calibration_map import _fetch_districts, _poi_names_by_cell
 
 DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 
-# Puerta de producto: audiencia oculta solo para sectores de visitante
-# (validación Nivel 1: en sectores residenciales el concepto apenas existe).
-MIN_VISITOR_AFFINITY = 0.6
+
+def sector_known(sector: str) -> bool:
+    """¿Es un sector del catálogo? Los desconocidos se rechazan (entrada inválida)."""
+    return sector in SECTOR_AFFINITY
 
 
-def sector_supported(sector: str) -> bool:
-    return SECTOR_AFFINITY.get(sector, {}).get("visitante", 0.0) >= MIN_VISITOR_AFFINITY
+def next_wave_applies(sector: str) -> bool:
+    """next_wave es el producto de los sectores RESIDENCIALES; en los de visitante
+    sería ruido (su producto es la audiencia oculta), así que se deja vacío."""
+    return sector in SECTOR_AFFINITY_RESIDENTIAL
 
 
 def _norm(s: str) -> str:
@@ -88,27 +97,34 @@ def run_insight(city: str, sector: str, profile: str, window: str | None) -> dic
     stats = CityStats.from_hexes(hexes, sector)
     results = detect_from_hexes(hexes, sector)
 
+    top_cells = {r.h3_index for r in results}
+    # next_wave: cara residencial (solo sectores residenciales), excluyendo lo
+    # ya marcado como audiencia oculta para que ambos productos no se pisen.
+    next_wave = (
+        detect_next_wave(hexes, sector, exclude=top_cells, stats=stats)
+        if next_wave_applies(sector) else []
+    )
+
     zonas = _fetch_districts(city)
     pois = _poi_names_by_cell(city)
-    top_cells = {r.h3_index for r in results}
     discarded = _find_discarded(hexes, stats, sector, top_cells, zonas)
     clima = _load_clima(city)
 
     prompt = build_prompt(city, sector, profile, window, results, zonas, pois,
-                          discarded, clima)
+                          discarded, clima, next_wave)
     narrative = generate_narrative(prompt)
 
+    def _serialize(r):
+        return {
+            "h3_index": r.h3_index, "lat": r.lat, "lon": r.lon,
+            "zona": zonas.get(r.h3_index, city.title()),
+            "resident_score": r.resident_score, "visitor_score": r.visitor_score,
+            "gap": r.gap, "description": r.description,
+        }
+
     payload = {
-        "hidden_audience": [
-            {
-                "h3_index": r.h3_index, "lat": r.lat, "lon": r.lon,
-                "zona": zonas.get(r.h3_index, city.title()),
-                "resident_score": r.resident_score, "visitor_score": r.visitor_score,
-                "gap": r.gap, "description": r.description,
-            }
-            for r in results
-        ],
-        "next_wave": [],  # producto para sectores residenciales — pendiente de diseño
+        "hidden_audience": [_serialize(r) for r in results],
+        "next_wave": [_serialize(r) for r in next_wave],
         "narrative": narrative,
     }
     set_cached(key, payload)
