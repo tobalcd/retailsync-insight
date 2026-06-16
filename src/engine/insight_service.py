@@ -130,3 +130,56 @@ def run_insight(city: str, sector: str, profile: str, window: str | None) -> dic
     }
     set_cached(key, payload)
     return {**payload, "cached": False}
+
+
+def run_ranking(city: str, sector: str, window: str | None) -> dict:
+    """Rejilla completa puntuada de una ciudad+sector+ventana (sin narrativa).
+
+    Una sola fuente de verdad para el frontend: colorear el mapa, ordenar el
+    ranking y marcar oportunidades, todo desde los MISMOS scores validados.
+    Rápido (no llama a Claude) y cacheado aparte de /insight.
+    """
+    if window is None:
+        window = SECTOR_DEFAULT_WINDOW.get(sector)
+    key = "ranking:" + input_hash(city, sector, "", window)
+    cached = get_cached(key)
+    if cached is not None:
+        return {**cached, "cached": True}
+
+    hexes = load_city_hexes(city, sector, window)
+    if not hexes:
+        raise ValueError(f"Sin datos para la ciudad '{city}' — ¿slug correcto?")
+    stats = CityStats.from_hexes(hexes, sector)
+    residential = next_wave_applies(sector)
+
+    # Oportunidades a marcar: la señal principal del sector.
+    if residential:
+        opp = detect_next_wave(hexes, sector, stats=stats)
+    else:
+        opp = detect_from_hexes(hexes, sector)
+    opp_cells = {r.h3_index for r in opp}
+
+    zonas = _fetch_districts(city)
+    grid = []
+    for hx in hexes:
+        if hx.poblacion <= 0:
+            continue  # hex sin residentes: fuera del universo mostrable
+        rs = resident_score(hx, stats, sector)
+        vs = visitor_score(hx, stats, sector)
+        grid.append({
+            "h3_index": hx.h3_index, "lat": hx.lat, "lon": hx.lon,
+            "zona": zonas.get(hx.h3_index, city.title()),
+            "resident_score": rs, "visitor_score": vs, "gap": round(vs - rs, 1),
+            # Métrica de cabecera: residencial → encaje residente; visitante → afluencia.
+            "score": rs if residential else vs,
+            "is_opportunity": hx.h3_index in opp_cells,
+        })
+    grid.sort(key=lambda g: g["score"], reverse=True)
+
+    payload = {
+        "city": city, "sector": sector, "window": window,
+        "primary_metric": "resident_score" if residential else "visitor_score",
+        "hexes": grid,
+    }
+    set_cached(key, payload)
+    return {**payload, "cached": False}

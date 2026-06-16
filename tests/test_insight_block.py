@@ -119,6 +119,58 @@ def test_health_abierto_incluso_con_api_key(client, monkeypatch):
     assert client.get("/health").status_code == 200
 
 
+def test_run_ranking_offline(monkeypatch):
+    """Ensamblado de la rejilla sin red: scores, orden y flag de oportunidad."""
+    import src.engine.insight_service as svc
+    from src.cache import store
+    from src.models import Hex
+
+    hexes = [
+        Hex(h3_index="A", lat=40.0, lon=-3.0, renta=20, poblacion=5, flujo_peatonal=100,
+            flujo_share=0.9, poi_counts={"oficinas": 10}),
+        Hex(h3_index="B", lat=40.1, lon=-3.1, renta=90, poblacion=90, flujo_peatonal=10,
+            flujo_share=0.1, poi_counts={}),
+        Hex(h3_index="Z", lat=40.2, lon=-3.2, renta=50, poblacion=0, flujo_peatonal=0,
+            poi_counts={}),  # sin residentes → fuera de la rejilla
+    ]
+    monkeypatch.setattr(svc, "load_city_hexes", lambda *a, **k: hexes)
+    monkeypatch.setattr(svc, "_fetch_districts", lambda city: {"A": "Centro", "B": "Hortaleza"})
+    monkeypatch.setattr(store, "_remote_get", lambda key: None)
+    monkeypatch.setattr(store, "_remote_set", lambda key, value: None)
+    monkeypatch.setattr(svc, "get_cached", lambda key: None)
+    monkeypatch.setattr(svc, "set_cached", lambda key, value: None)
+
+    out = svc.run_ranking("madrid", "banca", "laborable-manana")
+    assert out["primary_metric"] == "visitor_score"  # banca = visitante
+    scores = [h["score"] for h in out["hexes"]]
+    ids = [h["h3_index"] for h in out["hexes"]]
+    assert "Z" not in ids                       # sin residentes, excluido
+    assert scores == sorted(scores, reverse=True)  # ordenado por score desc
+    assert ids[0] == "A"                         # mucho paso > residencial en visitante
+    assert any(h["is_opportunity"] for h in out["hexes"])
+
+
+def test_ranking_endpoint_valida_sector(client):
+    r = client.post("/ranking", json={"city": "madrid", "sector": "xyz", "window": None})
+    assert r.status_code == 422
+
+
+def test_ranking_endpoint_happy_con_mock(client, monkeypatch):
+    import src.engine.insight_service as svc
+    monkeypatch.setattr(svc, "run_ranking", lambda *a: {
+        "city": "madrid", "sector": "banca", "window": "laborable-manana",
+        "primary_metric": "visitor_score", "cached": False,
+        "hexes": [{"h3_index": "A", "lat": 40.0, "lon": -3.0, "zona": "Centro",
+                   "resident_score": 20.0, "visitor_score": 80.0, "gap": 60.0,
+                   "score": 80.0, "is_opportunity": True}],
+    })
+    r = client.post("/ranking", json={"city": "madrid", "sector": "banca", "window": None})
+    assert r.status_code == 200, r.text
+    body = r.json()
+    assert body["primary_metric"] == "visitor_score"
+    assert body["hexes"][0]["is_opportunity"] is True
+
+
 def test_insight_happy_path_con_mocks(client, monkeypatch):
     import src.engine.insight_service as svc
 

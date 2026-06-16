@@ -74,6 +74,33 @@ class InsightResponse(BaseModel):
     cached: bool
 
 
+class RankingRequest(BaseModel):
+    city: str = Field(..., description="Slug de ciudad, p.ej. 'madrid'.")
+    sector: str = Field(..., description="Sector, p.ej. 'banca'.")
+    window: Optional[str] = Field(None, description="Ventana temporal o null (la del sector).")
+
+
+class RankingHex(BaseModel):
+    h3_index: str
+    lat: float
+    lon: float
+    zona: str
+    resident_score: float
+    visitor_score: float
+    gap: float
+    score: float
+    is_opportunity: bool
+
+
+class RankingResponse(BaseModel):
+    city: str
+    sector: str
+    window: Optional[str]
+    primary_metric: str
+    hexes: list[RankingHex]
+    cached: bool
+
+
 # ──────────────────────────── Endpoints ────────────────────────────
 @app.get("/health")
 def health() -> dict[str, str]:
@@ -101,4 +128,24 @@ def create_insight(req: InsightRequest) -> InsightResponse:
     except ValueError as exc:  # ciudad sin datos, etc.
         raise HTTPException(404, str(exc)) from exc
     except RuntimeError as exc:  # credenciales ausentes (Supabase / Anthropic)
+        raise HTTPException(503, str(exc)) from exc
+
+
+@app.post("/ranking", response_model=RankingResponse,
+          dependencies=[Security(require_api_key)])
+def create_ranking(req: RankingRequest) -> RankingResponse:
+    """Rejilla completa puntuada (sin narrativa): colorea el mapa y ordena el
+    ranking desde la misma fuente validada que las oportunidades. Rápido."""
+    from src.config import SECTOR_AFFINITY
+    from src.engine.insight_service import run_ranking, sector_known
+
+    if req.window is not None and req.window not in WINDOWS:
+        raise HTTPException(422, f"Ventana desconocida: '{req.window}'. Usa {sorted(WINDOWS)} o null.")
+    if not sector_known(req.sector):
+        raise HTTPException(422, f"Sector desconocido: '{req.sector}'. Disponibles: {sorted(SECTOR_AFFINITY)}.")
+    try:
+        return RankingResponse(**run_ranking(req.city, req.sector, req.window))
+    except ValueError as exc:
+        raise HTTPException(404, str(exc)) from exc
+    except RuntimeError as exc:
         raise HTTPException(503, str(exc)) from exc
