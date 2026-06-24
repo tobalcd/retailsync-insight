@@ -106,6 +106,31 @@ NO optimización formal. El umbral fijo permite devolver pocas zonas (o
 ninguna) cuando no hay señal — honestidad comercial deliberada. Evolución
 futura anotada: umbral por percentil de ciudad cuando entren las Tier-2.
 
+## Normalización percentil — PROBADA Y DESCARTADA (2026-06-12)
+
+Se probó sustituir la normalización min-max por **rango percentil** (más robusta
+a outliers en teoría). Resultado en la validación OSM: **empeoró el lift en los
+tres sectores** (banca 1,8→1,4×; moda 2,5→2,0×; alimentación 1,8→1,1×). Motivo:
+el percentil **aplana la magnitud**, y para flujo de movilidad la magnitud es
+señal real (un hex con 1M de visitantes no es "el siguiente en el ranking" a uno
+de 100k). Revertido. Si se quiere robustez a outliers, el camino es **min-max
+winsorizado** (recortar p1/p99 pero conservar la magnitud dentro del rango), no
+el percentil puro. No reintentar percentil sin un cambio de enfoque.
+
+## Sensibilidad (Nivel 2, src/validation/sensitivity.py, 2026-06-12)
+
+Perturbando cada peso ±20% y midiendo el solape del top-10:
+- **El modelo es mayormente robusto**: en Madrid (banca y moda) y Barcelona banca
+  el top-10 conserva 80-100% bajo perturbaciones. Claim para deck: "el ranking
+  es estable ante perturbaciones del ±20% en los pesos".
+- **Pesos más influyentes**: `visitor.flujo` y `visitor.share` (los del núcleo de
+  movilidad) — son los que habría que clavar si se hace el paso 4 (aprender pesos).
+- **Punto frágil concentrado**: Barcelona·moda_lujo baja a 50% de solape — el
+  mismo caso del trío turístico donde ya sabemos que el dato MITMA es pobre. La
+  fragilidad NO es sistémica; está donde ya sabíamos que el dato flojea.
+- Las afinidades de perfil (constantes por ciudad) son ~100% robustas: solo mueven
+  el corte de umbral, no el orden.
+
 ## Detalle por ciudad
 
 Ver `data/validation_level1.csv` (generado por el script). Resumen banca:
