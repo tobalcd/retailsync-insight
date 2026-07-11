@@ -15,8 +15,9 @@ dependencies = [
     "pyarrow>=17",              # escritura/lectura de parquet
     "pydantic-settings>=2.4",   # carga de config desde .env
     "python-dotenv>=1.0",       # lee el .env en desarrollo local
-    "h3>=4",                    # cálculo de h3_index (res 8) en la ingesta/migración
-    "json5>=0.9",               # parseo tolerante de los datasets .ts del frontend
+    "h3>=4",                     # cálculo de h3_index (res 8) en la ingesta/migración
+    "pyproj>=3",                 # conversión UTM->lat/lng (censo Madrid, futuras fuentes municipales)
+    "json5>=0.9",                # parseo tolerante de los datasets .ts del frontend
 ]
 
 [project.optional-dependencies]

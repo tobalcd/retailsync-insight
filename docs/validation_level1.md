@@ -131,6 +131,50 @@ Perturbando cada peso ±20% y midiendo el solape del top-10:
 - Las afinidades de perfil (constantes por ciudad) son ~100% robustas: solo mueven
   el corte de umbral, no el orden.
 
+## Madrid vs. Censo de Locales oficial (2026-07-11)
+
+Se sustituyó OSM por el **Censo de Locales y Actividades del Ayuntamiento de
+Madrid** (`datos.madrid.es`, CC BY 4.0, uso comercial permitido) como verdad
+externa — es el registro oficial, no crowdsourcing: 159.561 locales abiertos,
+frente a los ~5.700 elementos que devolvía Overpass para los tres sectores.
+Fuente: `src/signals/madrid_census.py`, comparación en
+`src/validation/madrid_census_check.py`.
+
+| Sector | OSM lift (Madrid) | **Censo lift (Madrid)** | Censo baseline | Negocios censo |
+|---|--:|--:|--:|--:|
+| banca | 2,6× | **2,3×** | 40% | 1.351 |
+| moda_lujo | 4,0× | **2,1×** | 47% | 5.506 |
+| alimentacion | 1,9× | **1,3×** | 79% | 12.919 |
+
+**Hallazgo honesto: el lift BAJA con datos mejores** (no sube). No es un fallo
+del detector ni del censo — es que OSM está incompleto (5.506 tiendas de moda
+reales en el censo vs. 1.788 en OSM), así que su baseline salía artificialmente
+bajo, lo que **inflaba** el lift medido contra OSM. El censo, más denso y
+completo, da un baseline más alto y honesto → lift más comprimido pero más
+correcto. Verificado que no es un artefacto de duplicados (banca: 1.351
+locales en 571 hexes distintos — dispersión real, no coordenadas apiladas).
+
+**Lectura para el deck: usar los números del censo para Madrid, no los de OSM.**
+Son más bajos pero mucho más defendibles — están respaldados por el registro
+oficial del ayuntamiento, no por cobertura voluntaria variable. El lift sigue
+>1 en los tres sectores (el detector añade valor real), pero de forma más
+modesta de lo que sugería el agregado de 10 ciudades vía OSM. Implicación para
+el resto de ciudades: su lift vía OSM probablemente también está sobreestimado
+por el mismo motivo (cobertura OSM incompleta); sin censo propio no podemos
+cuantificar cuánto.
+
+**alimentacion (1,3×) es el caso límite**: con un baseline del 79% (casi
+cualquier hex de Madrid tiene ya un negocio de alimentación), la historia
+"el detector descubre oportunidades" pierde fuerza para este sector medido
+como audiencia oculta. Coherente con la decisión de producto ya tomada:
+alimentación no usa `hidden_audience`, usa `next_wave` — que este script no
+mide (mide con la lógica de audiencia oculta para todos los sectores, igual
+que level1.py). Pendiente: extender la comparación con censo a `next_wave`.
+
+**Siguiente paso natural**: repetir con el censo de Barcelona (o el
+equivalente municipal de otras ciudades) para saber si el patrón de
+compresión del lift es general o específico de Madrid.
+
 ## Detalle por ciudad
 
 Ver `data/validation_level1.csv` (generado por el script). Resumen banca:

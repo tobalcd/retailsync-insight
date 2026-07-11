@@ -39,3 +39,6 @@ screens.json
 data/calibration_*.html
 # Cache de negocios OSM (regenerable con src.validation.level1)
 data/osm_*.json
+# Censo de locales Madrid (119MB CSV fuente + cachés JSON derivadas)
+data/madrid_census/
+data/madrid_census_*.json
