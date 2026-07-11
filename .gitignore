@@ -42,3 +42,6 @@ data/osm_*.json
 # Censo de locales Madrid (119MB CSV fuente + cachés JSON derivadas)
 data/madrid_census/
 data/madrid_census_*.json
+# Censo comercial Barcelona (24MB CSV fuente + cachés JSON derivadas)
+data/barcelona_census/
+data/barcelona_census_*.json

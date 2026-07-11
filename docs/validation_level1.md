@@ -171,9 +171,36 @@ alimentación no usa `hidden_audience`, usa `next_wave` — que este script no
 mide (mide con la lógica de audiencia oculta para todos los sectores, igual
 que level1.py). Pendiente: extender la comparación con censo a `next_wave`.
 
-**Siguiente paso natural**: repetir con el censo de Barcelona (o el
-equivalente municipal de otras ciudades) para saber si el patrón de
-compresión del lift es general o específico de Madrid.
+## Barcelona vs. Cens d'Activitats Comercials oficial (2026-07-11)
+
+Repetido con el censo del Ajuntament de Barcelona (`opendata-ajuntament.barcelona.cat`,
+2024, CC BY 4.0, 68.024 locales). Fuente: `src/signals/barcelona_census.py`,
+comparación en `src/validation/barcelona_census_check.py`. Nota de formato:
+Barcelona cae en huso **UTM 31N** (EPSG:25831), no 30N como Madrid — el CSV ya
+trae lat/lng directas, verificadas contra las columnas UTM.
+
+| Sector | OSM lift (BCN) | **Censo lift (BCN)** | Censo baseline | Negocios censo |
+|---|--:|--:|--:|--:|
+| banca | 1,3× | **0,9× ⚠️** | 46% | 486 |
+| moda_lujo | 1,5× | **1,4×** | 65% | 3.995 |
+| alimentacion | 1,3× | **1,1×** | 88% | 7.602 |
+
+**El patrón de Madrid se confirma** (censo lift ≤ OSM lift en los 3 sectores).
+Verificado que no es artefacto de dispersión (banca: 486 locales en 255 hexes
+distintos). Taxonomía del censo BCN: moda/alimentación se aíslan limpias por
+`Nom_Grup_Activitat`+`Nom_Activitat`; banca requiere filtrar además por marca
+reconocida en `Nom_Local` (el grupo "Finances i assegurances" mezcla bancos
+con aseguradoras — Mapfre, Axa, Catalana Occident — y cambio de divisa).
+
+**Hallazgo accionable, no solo informativo: `banca` en Barcelona da lift <1
+(0,9×) — el detector NO supera al azar con la mejor verdad externa
+disponible.** Esto confirma y cuantifica una limitación ya conocida (ver
+`docs/data_curation.md`): el snapshot MITMA de Barcelona apenas tiene zonas
+tipo `business` (se curaron 2 a mano en su momento — Diagonal/Les Corts y
+22@ — pero es insuficiente). Con datos oficiales de sobra para validar, ya NO
+hay margen de duda: **`banca` en Barcelona no está listo para presentarse a
+cliente** hasta que llegue zonificación MITMA real o más curación de zonas.
+`moda_lujo` y `alimentacion` sí mantienen lift >1, con margen razonable.
 
 ## Detalle por ciudad
 
