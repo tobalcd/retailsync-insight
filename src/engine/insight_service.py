@@ -32,6 +32,15 @@ def sector_known(sector: str) -> bool:
     return sector in SECTOR_AFFINITY
 
 
+def _load_density(city: str, sector: str) -> dict | None:
+    """Densidad censal del sector por hex (Madrid/BCN). None si no hay dato."""
+    try:
+        from src.signals.census_density import load_density
+        return load_density(city, sector)
+    except Exception:  # noqa: BLE001 — la saturación es opcional, nunca rompe
+        return None
+
+
 def next_wave_applies(sector: str) -> bool:
     """next_wave es el producto de los sectores RESIDENCIALES; en los de visitante
     sería ruido (su producto es la audiencia oculta), así que se deja vacío."""
@@ -101,7 +110,8 @@ def run_insight(city: str, sector: str, profile: str, window: str | None) -> dic
     # next_wave: cara residencial (solo sectores residenciales), excluyendo lo
     # ya marcado como audiencia oculta para que ambos productos no se pisen.
     next_wave = (
-        detect_next_wave(hexes, sector, exclude=top_cells, stats=stats)
+        detect_next_wave(hexes, sector, exclude=top_cells, stats=stats,
+                         density=_load_density(city, sector))
         if next_wave_applies(sector) else []
     )
 
@@ -154,7 +164,8 @@ def run_ranking(city: str, sector: str, window: str | None) -> dict:
 
     # Oportunidades a marcar: la señal principal del sector.
     if residential:
-        opp = detect_next_wave(hexes, sector, stats=stats)
+        opp = detect_next_wave(hexes, sector, stats=stats,
+                               density=_load_density(city, sector))
     else:
         opp = detect_from_hexes(hexes, sector)
     opp_cells = {r.h3_index for r in opp}

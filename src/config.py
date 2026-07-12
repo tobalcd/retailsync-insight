@@ -227,6 +227,11 @@ def thresholds_for(sector: str) -> tuple[float, float]:
 NEXT_WAVE_SKEW_MIN = 10.0
 NEXT_WAVE_TOP_N = 10
 
+# Saturación (solo ciudades con censo oficial): un hex cuyo nº de negocios
+# reales del sector supera este percentil de la ciudad queda fuera de
+# next_wave — ya está entre lo más saturado, no es "próxima ola".
+NEXT_WAVE_SATURATION_PCT = 0.75
+
 # Sectores cuyo producto PRINCIPAL es next_wave (perfil residente domina). Para
 # el resto, next_wave es secundario y suele salir ralo. Derivado de la afinidad.
 SECTOR_AFFINITY_RESIDENTIAL = {

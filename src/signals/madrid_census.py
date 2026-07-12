@@ -55,6 +55,27 @@ SECTOR_EPIGRAFES: dict[str, set[str]] = {
         "COMERCIO AL POR MENOR DE PESCADOS Y MARISCOS SIN OBRADOR",
         "COMERCIO AL POR MENOR DE AVES, HUEVOS Y CAZA SIN OBRADOR",
     },
+    # Sectores residenciales (para saturación de next_wave). Epígrafes
+    # explorados contra el CSV real 2026-07 — solo categorías inequívocas
+    # (fuera clubes/instalaciones deportivas: a menudo no son competencia
+    # de consumo directa).
+    "interiorismo_hogar": {
+        "COMERCIO AL POR MENOR DE MUEBLES",
+        "COMERCIO AL POR MENOR DE TEXTILES PARA EL HOGAR",
+        "COMERCIO AL POR MENOR DE ARTICULOS DE FERRETERIA",
+        "COMERCIO AL POR MENOR DE ARTICULOS DE USO DOMESTICO EN ESTABLECIMIENTO ESPECIALIZADO",
+        "COMERCIO AL POR MENOR DE MUEBLES DE COCINA",
+        "COMERCIO AL POR MENOR DE APARATOS DE ILUMINACION",
+    },
+    "deportes_fitness": {
+        "ACTIVIDADES DE LOS GIMNASIOS",
+        "COMERCIO AL POR MENOR DE ARTICULOS DEPORTIVOS",
+    },
+    "tecnologia": {
+        "COMERCIO AL POR MENOR DE PRODUCTOS DE TELEFONIA Y TELECOMUNICACIONES",
+        "COMERCIO AL POR MENOR DE PRODUCTOS INFORMATICOS (ORDENADORES, PROGRAMAS, EQUIPOS PERIFERICOS Y CONSUMIBLES)",
+        "COMERCIO AL POR MENOR DE ELECTRODOMESTICOS",
+    },
 }
 
 

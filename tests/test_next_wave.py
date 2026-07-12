@@ -46,6 +46,40 @@ def test_next_wave_lista_vacia():
     assert detect_next_wave([], sector="alimentacion") == []
 
 
+def test_next_wave_saturacion_excluye_hexes_saturados():
+    """Con densidad censal: el hex residencial saturado de competidores cae."""
+    # R y M son residenciales; R está saturado (10 negocios), M virgen (0).
+    density = {"R": 10, "M": 0, "V": 0}
+    res = detect_next_wave(HEXES, sector="alimentacion", density=density)
+    ids = [r.h3_index for r in res]
+    assert "R" not in ids, "hex saturado no puede ser 'próxima ola'"
+    assert "M" in ids
+
+
+def test_next_wave_saturacion_en_descripcion():
+    # V (5) es el saturado de esta mini-ciudad → umbral p75=2; R y M pasan.
+    density = {"R": 0, "M": 2, "V": 5}
+    res = detect_next_wave(HEXES, sector="alimentacion", density=density)
+    by_id = {r.h3_index: r for r in res}
+    assert "Sin competencia del sector" in by_id["R"].description
+    assert "2 negocio(s) del sector" in by_id["M"].description
+
+
+def test_next_wave_sin_densidad_comporta_igual_que_antes():
+    # density=None → sin filtro ni mención censal (ciudades sin censo oficial).
+    res = detect_next_wave(HEXES, sector="alimentacion", density=None)
+    assert [r.h3_index for r in res] == ["R", "M"]
+    assert all("censo" not in r.description for r in res)
+
+
+def test_saturation_threshold_percentil():
+    from src.patterns.next_wave import saturation_threshold
+    # 4 hexes poblados con conteos 0,0,1,10 → p75 (idx int(0.75*3)=2) = 1
+    density = {"R": 10, "M": 1, "V": 0}
+    hexes = HEXES + [HEXES[0].model_copy(update={"h3_index": "extra"})]
+    assert saturation_threshold(hexes, density) == 1
+
+
 def test_next_wave_applies_solo_residenciales():
     # Gate de producto: residenciales sí, visitantes no.
     from src.engine.insight_service import next_wave_applies

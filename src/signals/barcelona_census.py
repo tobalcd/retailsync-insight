@@ -52,6 +52,17 @@ SECTOR_FILTERS: dict[str, tuple[str, set[str] | None]] = {
         "Fruites i verdures", "Peix i marisc", "Ous i aus", "Begudes",
         "Plats preparats (no degustació)",
     }),
+    # Sectores residenciales (saturación de next_wave). Explorado 2026-07:
+    # fuera Floristeries y Segells/monedes (no son interiorismo) y
+    # "Joguines i esports" (contaminado de jugueterías).
+    "interiorismo_hogar": ("Parament de la llar", {
+        "Material equipament llar", "Mobles i articles fusta i metall",
+        "Parament ferreteria", "Aparells domèstics",
+    }),
+    "deportes_fitness": ("Altres", {
+        "Gimnàs /fitnes", "Altres equipaments esportius", "Esports",
+    }),
+    "tecnologia": ("Oci i cultura", {"Informàtica"}),
 }
 
 
