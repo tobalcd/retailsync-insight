@@ -131,3 +131,15 @@ def test_build_hexes_integra_las_tres_fuentes():
     lat, lon = h3.cell_to_latlng(CELL_A)
     assert hexes[CELL_A].lat == pytest.approx(lat)
     assert hexes[CELL_A].lon == pytest.approx(lon)
+
+
+def test_cell_of_excluye_coords_de_fallback():
+    """Secciones con coordenadas de distrito/municipio quedan fuera de la malla
+    (apilan población de varias secciones en un punto — artefacto Vicálvaro)."""
+    from src.patterns.aggregation import cell_of
+    base = {"lat": 40.4, "lng": -3.6, "coords_pendientes": False}
+    assert cell_of({**base, "coords_source": "seccion"}) is not None
+    assert cell_of({**base, "coords_source": "distrito"}) is None
+    assert cell_of({**base, "coords_source": "municipio"}) is None
+    # filas sin coords_source (screens, venues, paradas GTFS) no se ven afectadas
+    assert cell_of(base) is not None

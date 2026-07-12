@@ -43,9 +43,19 @@ def cell_of(row: dict) -> str | None:
 
     No usa el h3_index almacenado (que es res 8 fijo): así H3_RES es la única
     fuente de verdad de la resolución. Sin coordenadas fiables → None.
+
+    Coordenadas de fallback ('distrito'/'municipio' en coords_source) también
+    quedan fuera: a ~100 m de resolución no significan nada y APILAN la
+    población de varias secciones en un mismo punto (artefacto real detectado
+    en Vicálvaro: 5 secciones de El Cañaveral con 13.789 hab. en un solo hex).
+    Las filas sin campo coords_source (screens, venues, paradas) no se ven
+    afectadas.
     """
     lat, lng = row.get("lat"), row.get("lng")
     if lat is None or lng is None or row.get("coords_pendientes"):
+        return None
+    src = row.get("coords_source")
+    if src is not None and src != "seccion":
         return None
     return h3.latlng_to_cell(float(lat), float(lng), H3_RES)
 
@@ -257,7 +267,7 @@ def load_city_inputs(city_slug: str) -> tuple[list[dict], list[dict], list[dict]
 
     client = get_client()
     ine = _fetch_all(client, "ine_renta",
-                     "lat,lng,coords_pendientes,renta_neta_hogar,poblacion", city_slug)
+                     "lat,lng,coords_pendientes,coords_source,renta_neta_hogar,poblacion", city_slug)
     zones = _fetch_all(client, "mobility_zones",
                        "lat,lng,avg_daily_visitors,tipo,traffic_profile", city_slug)
     screens = _fetch_all(client, "screens", "lat,lng,tipo,tags", city_slug)

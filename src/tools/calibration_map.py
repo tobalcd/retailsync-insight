@@ -76,7 +76,7 @@ def _fetch_districts(city_slug: str) -> dict[str, str]:
     while True:
         batch = (
             client.table("ine_renta")
-            .select("lat,lng,coords_pendientes,distrito")
+            .select("lat,lng,coords_pendientes,coords_source,distrito")
             .eq("city_slug", city_slug)
             .range(start, start + 999)
             .execute()
